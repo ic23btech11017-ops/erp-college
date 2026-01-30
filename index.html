@@ -584,7 +584,7 @@
         .card-header {
             display: flex;
             align-items: center;
-            justify-content: space-between;
+           justify-content: space-between;
             margin-bottom: 20px;
             padding-bottom: 16px;
             border-bottom: 1px solid #e2e8f0;
@@ -931,282 +931,6 @@
             background: #27ae60;
         }
         
-        /* Detail Screen */
-        .detail-container {
-            max-width: 1400px;
-        }
-        
-        .detail-header {
-            background: #ffffff;
-            border: 1px solid #e2e8f0;
-            border-radius: 8px;
-            padding: 24px;
-            margin-bottom: 24px;
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-        }
-        
-        body.dark-mode .detail-header {
-            background: #1a1f2e;
-            border-color: #2a3041;
-        }
-        
-        .detail-info {
-            flex: 1;
-        }
-        
-        .detail-title {
-            font-size: 24px;
-            font-weight: 700;
-            color: #1a202c;
-            margin-bottom: 8px;
-        }
-        
-        body.dark-mode .detail-title {
-            color: #ffffff;
-        }
-        
-        .detail-subtitle {
-            font-size: 14px;
-            color: #718096;
-            margin-bottom: 16px;
-        }
-        
-        body.dark-mode .detail-subtitle {
-            color: #8b92a8;
-        }
-        
-        .detail-meta {
-            display: flex;
-            gap: 24px;
-            flex-wrap: wrap;
-        }
-        
-        .meta-item {
-            display: flex;
-            flex-direction: column;
-            gap: 4px;
-        }
-        
-        .meta-label {
-            font-size: 11px;
-            color: #718096;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-        
-        body.dark-mode .meta-label {
-            color: #8b92a8;
-        }
-        
-        .meta-value {
-            font-size: 14px;
-            font-weight: 600;
-            color: #1a202c;
-        }
-        
-        body.dark-mode .meta-value {
-            color: #ffffff;
-        }
-        
-        .detail-actions {
-            display: flex;
-            gap: 8px;
-            flex-wrap: wrap;
-        }
-        
-        .detail-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 24px;
-            margin-bottom: 24px;
-        }
-        
-        /* Timeline */
-        .timeline {
-            position: relative;
-            padding-left: 32px;
-        }
-        
-        .timeline::before {
-            content: '';
-            position: absolute;
-            left: 8px;
-            top: 8px;
-            bottom: 8px;
-            width: 2px;
-            background: #e2e8f0;
-        }
-        
-        body.dark-mode .timeline::before {
-            background: #2a3041;
-        }
-        
-        .timeline-item {
-            position: relative;
-            padding-bottom: 24px;
-        }
-        
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: -28px;
-            top: 4px;
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background: #4a90e2;
-            border: 2px solid #ffffff;
-        }
-        
-        body.dark-mode .timeline-item::before {
-            border-color: #1a1f2e;
-        }
-        
-        .timeline-content {
-            background: #f7fafc;
-            border: 1px solid #e2e8f0;
-            border-radius: 6px;
-            padding: 12px 16px;
-        }
-        
-        body.dark-mode .timeline-content {
-            background: #141920;
-            border-color: #2a3041;
-        }
-        
-        .timeline-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 6px;
-        }
-        
-        .timeline-title {
-            font-size: 13px;
-            font-weight: 600;
-            color: #1a202c;
-        }
-        
-        body.dark-mode .timeline-title {
-            color: #ffffff;
-        }
-        
-        .timeline-time {
-            font-size: 11px;
-            color: #718096;
-        }
-        
-        body.dark-mode .timeline-time {
-            color: #8b92a8;
-        }
-        
-        .timeline-description {
-            font-size: 12px;
-            color: #4a5568;
-        }
-        
-        body.dark-mode .timeline-description {
-            color: #b4b9c7;
-        }
-        
-        /* Alert Panel */
-        .alert-panel {
-            background: rgba(231, 76, 60, 0.1);
-            border: 1px solid rgba(231, 76, 60, 0.3);
-            border-radius: 8px;
-            padding: 16px 20px;
-            margin-bottom: 24px;
-        }
-        
-        .alert-header {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 12px;
-        }
-        
-        .alert-icon {
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            background: rgba(231, 76, 60, 0.2);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #e74c3c;
-        }
-        
-        .alert-title {
-            font-size: 14px;
-            font-weight: 700;
-            color: #e74c3c;
-        }
-        
-        .alert-list {
-            list-style: none;
-        }
-        
-        .alert-item {
-            padding: 8px 0;
-            border-bottom: 1px solid rgba(231, 76, 60, 0.2);
-            font-size: 13px;
-            color: #2c3e50;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        body.dark-mode .alert-item {
-            color: #e4e6eb;
-        }
-        
-        .alert-item:last-child {
-            border-bottom: none;
-        }
-        
-        /* Info Grid */
-        .info-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 16px;
-            padding: 20px;
-            background: #f7fafc;
-            border-radius: 6px;
-        }
-        
-        body.dark-mode .info-grid {
-            background: #141920;
-        }
-        
-        .info-item {
-            display: flex;
-            flex-direction: column;
-            gap: 6px;
-        }
-        
-        .info-label {
-            font-size: 11px;
-            color: #718096;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-        
-        body.dark-mode .info-label {
-            color: #8b92a8;
-        }
-        
-        .info-value {
-            font-size: 14px;
-            font-weight: 600;
-            color: #1a202c;
-        }
-        
-        body.dark-mode .info-value {
-            color: #ffffff;
-        }
-        
         /* Action Row */
         .action-cell {
             display: flex;
@@ -1238,99 +962,6 @@
         body.dark-mode .action-btn:hover {
             background: #3a4051;
             border-color: #4a5061;
-        }
-        
-        /* Progress Bar */
-        .progress-bar {
-            width: 100%;
-            height: 6px;
-            background: #e2e8f0;
-            border-radius: 3px;
-            overflow: hidden;
-            margin-top: 8px;
-        }
-        
-        body.dark-mode .progress-bar {
-            background: #2a3041;
-        }
-        
-        .progress-fill {
-            height: 100%;
-            background: #4a90e2;
-            transition: width 0.3s ease;
-        }
-        
-        .progress-fill.success { background: #2ecc71; }
-        .progress-fill.warning { background: #e67e22; }
-        .progress-fill.danger { background: #e74c3c; }
-        
-        /* Nested Card */
-        .nested-card {
-            background: #f7fafc;
-            border: 1px solid #e2e8f0;
-            border-radius: 6px;
-            padding: 16px;
-            margin-top: 16px;
-        }
-        
-        body.dark-mode .nested-card {
-            background: #141920;
-            border-color: #2a3041;
-        }
-        
-        .nested-card-title {
-            font-size: 14px;
-            font-weight: 700;
-            color: #1a202c;
-            margin-bottom: 12px;
-            padding-bottom: 12px;
-            border-bottom: 1px solid #e2e8f0;
-        }
-        
-        body.dark-mode .nested-card-title {
-            color: #ffffff;
-            border-bottom-color: #2a3041;
-        }
-        
-        /* Stats Grid */
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-            gap: 16px;
-        }
-        
-        .stat-box {
-            background: #f7fafc;
-            border: 1px solid #e2e8f0;
-            border-radius: 6px;
-            padding: 16px;
-            text-align: center;
-        }
-        
-        body.dark-mode .stat-box {
-            background: #141920;
-            border-color: #2a3041;
-        }
-        
-        .stat-value {
-            font-size: 24px;
-            font-weight: 700;
-            color: #1a202c;
-            margin-bottom: 4px;
-        }
-        
-        body.dark-mode .stat-value {
-            color: #ffffff;
-        }
-        
-        .stat-label {
-            font-size: 11px;
-            color: #718096;
-            text-transform: uppercase;
-        }
-        
-        body.dark-mode .stat-label {
-            color: #8b92a8;
         }
         
         /* Hidden */
@@ -1490,15 +1121,15 @@
         <div class="sidebar-nav">
             <div class="nav-section">
                 <div class="nav-section-title">Core</div>
-                <div class="nav-item active" onclick="navigateTo('overview')">
+                <div class="nav-item active" data-screen="overview">
                     <span class="nav-item-icon">📊</span>
                     <span>Overview Dashboard</span>
                 </div>
-                <div class="nav-item" onclick="navigateTo('users')">
+                <div class="nav-item" data-screen="users">
                     <span class="nav-item-icon">👥</span>
                     <span>Users</span>
                 </div>
-                <div class="nav-item" onclick="navigateTo('departments')">
+                <div class="nav-item" data-screen="departments">
                     <span class="nav-item-icon">🏢</span>
                     <span>Departments</span>
                 </div>
@@ -1506,23 +1137,23 @@
             
             <div class="nav-section">
                 <div class="nav-section-title">Academics</div>
-                <div class="nav-item" onclick="navigateTo('students')">
+                <div class="nav-item" data-screen="students">
                     <span class="nav-item-icon">🎓</span>
                     <span>Student Master</span>
                 </div>
-                <div class="nav-item" onclick="navigateTo('courses')">
+                <div class="nav-item" data-screen="courses">
                     <span class="nav-item-icon">📚</span>
                     <span>Course & Curriculum</span>
                 </div>
-                <div class="nav-item" onclick="navigateTo('registration')">
+                <div class="nav-item" data-screen="registration">
                     <span class="nav-item-icon">📝</span>
                     <span>Registration Control</span>
                 </div>
-                <div class="nav-item" onclick="navigateTo('attendance')">
+                <div class="nav-item" data-screen="attendance">
                     <span class="nav-item-icon">📅</span>
                     <span>Attendance Overview</span>
                 </div>
-                <div class="nav-item" onclick="navigateTo('exams')">
+                <div class="nav-item" data-screen="exams">
                     <span class="nav-item-icon">📄</span>
                     <span>Exams & Results</span>
                 </div>
@@ -1530,19 +1161,19 @@
             
             <div class="nav-section">
                 <div class="nav-section-title">Operations</div>
-                <div class="nav-item" onclick="navigateTo('assets')">
+                <div class="nav-item" data-screen="assets">
                     <span class="nav-item-icon">💼</span>
                     <span>Asset Master</span>
                 </div>
-                <div class="nav-item" onclick="navigateTo('tickets')">
+                <div class="nav-item" data-screen="tickets">
                     <span class="nav-item-icon">🔧</span>
                     <span>Maintenance Tickets</span>
                 </div>
-                <div class="nav-item" onclick="navigateTo('hostel')">
+                <div class="nav-item" data-screen="hostel">
                     <span class="nav-item-icon">🏠</span>
                     <span>Hostel Management</span>
                 </div>
-                <div class="nav-item" onclick="navigateTo('facility')">
+                <div class="nav-item" data-screen="facility">
                     <span class="nav-item-icon">🏋️</span>
                     <span>Facility / Booking</span>
                 </div>
@@ -1550,31 +1181,39 @@
             
             <div class="nav-section">
                 <div class="nav-section-title">Finance</div>
-                <div class="nav-item" onclick="navigateTo('feeStructure')">
+                <div class="nav-item" data-screen="feeStructure">
                     <span class="nav-item-icon">💰</span>
                     <span>Fee Structure</span>
                 </div>
-                <div class="nav-item" onclick="navigateTo('feeLedger')">
+                <div class="nav-item" data-screen="feeLedger">
                     <span class="nav-item-icon">📊</span>
                     <span>Student Fee Ledger</span>
                 </div>
-                <div class="nav-item" onclick="navigateTo('payments')">
+                <div class="nav-item" data-screen="payments">
                     <span class="nav-item-icon">💳</span>
                     <span>Payments & Waivers</span>
                 </div>
             </div>
             
             <div class="nav-section">
+                <div class="nav-section-title">Communication</div>
+                <div class="nav-item" data-screen="notices">
+                    <span class="nav-item-icon">📢</span>
+                    <span>Notices & Announcements</span>
+                </div>
+            </div>
+            
+            <div class="nav-section">
                 <div class="nav-section-title">System</div>
-                <div class="nav-item" onclick="navigateTo('auditLogs')">
+                <div class="nav-item" data-screen="auditLogs">
                     <span class="nav-item-icon">📋</span>
                     <span>Audit Logs</span>
                 </div>
-                <div class="nav-item" onclick="navigateTo('systemHealth')">
+                <div class="nav-item" data-screen="systemHealth">
                     <span class="nav-item-icon">❤️</span>
                     <span>System Health</span>
                 </div>
-                <div class="nav-item" onclick="navigateTo('configurations')">
+                <div class="nav-item" data-screen="configurations">
                     <span class="nav-item-icon">⚙️</span>
                     <span>Configurations</span>
                 </div>
@@ -1588,17 +1227,17 @@
         <div class="topbar">
             <div class="topbar-title" id="pageTitle">Overview Dashboard</div>
             <div class="topbar-actions">
-                <button class="topbar-btn">Export Data</button>
-                <button class="topbar-btn">Quick Actions</button>
-                <div class="topbar-icon has-badge">🔔</div>
-                <div class="theme-toggle" onclick="toggleTheme()" title="Toggle Dark Mode">
+                <div class="theme-toggle" onclick="toggleTheme()">
                     <span id="themeIcon">🌙</span>
+                </div>
+                <div class="topbar-icon has-badge">
+                    🔔
                 </div>
                 <div class="user-menu">
                     <div class="user-avatar">AD</div>
                     <div class="user-info">
                         <div class="user-name">Admin User</div>
-                        <div class="user-role">System Admin</div>
+                        <div class="user-role" id="userRoleDisplay">Administrator</div>
                     </div>
                 </div>
             </div>
@@ -1606,450 +1245,2496 @@
         
         <!-- Content Area -->
         <div class="content-area" id="contentArea">
-            <!-- Content will be injected here -->
+            <!-- Content will be dynamically loaded here -->
         </div>
     </div>
 </div>
 
 <script>
-let currentRole = '';
-let currentScreen = 'roleSelection';
-let isDarkMode = false;
+    // Global State
+    let currentScreen = 'overview';
+    let selectedRole = '';
+    let currentUser = null;
 
-// Theme Toggle
-function toggleTheme() {
-    isDarkMode = !isDarkMode;
-    document.body.classList.toggle('dark-mode');
-    document.getElementById('themeIcon').textContent = isDarkMode ? '☀️' : '🌙';
-    localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
-}
-
-// Load theme preference
-window.addEventListener('DOMContentLoaded', () => {
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark') {
-        isDarkMode = true;
-        document.body.classList.add('dark-mode');
-        document.getElementById('themeIcon').textContent = '☀️';
-    }
-});
-
-// Role Selection
-function selectRole(role) {
-    currentRole = role;
-    document.getElementById('roleSelectionScreen').classList.add('hidden');
-    document.getElementById('loginScreen').classList.remove('hidden');
-    document.getElementById('loginRole').value = role;
-}
-
-// Login
-function handleLogin(event) {
-    event.preventDefault();
-    const role = document.getElementById('loginRole').value;
-    document.getElementById('loginScreen').classList.add('hidden');
-    document.getElementById('mainApp').classList.remove('hidden');
-    
-    if (role === 'admin' || role === 'management') {
-        navigateTo('overview');
-    } else if (role === 'operations') {
-        navigateTo('assets');
-    } else {
-        navigateTo('overview');
-    }
-}
-
-// Navigation
-function navigateTo(screen) {
-    currentScreen = screen;
-    
-    // Update sidebar active state
-    document.querySelectorAll('.nav-item').forEach(item => {
-        item.classList.remove('active');
-    });
-    
-    event.target.closest('.nav-item')?.classList.add('active');
-    
-    // Update page title and content
-    const titles = {
-        'overview': 'Overview Dashboard',
-        'users': 'Users',
-        'userDetail': 'User Detail',
-        'departments': 'Departments',
-        'students': 'Student Master',
-        'courses': 'Course & Curriculum',
-        'registration': 'Registration Control',
-        'attendance': 'Attendance Overview',
-        'exams': 'Exams & Results',
-        'assets': 'Asset Master',
-        'assetDetail': 'Asset Detail',
-        'tickets': 'Maintenance Tickets',
-        'ticketDetail': 'Ticket Detail',
-        'hostel': 'Hostel Management',
-        'facility': 'Facility / Booking',
-        'feeStructure': 'Fee Structure',
-        'feeLedger': 'Student Fee Ledger',
-        'payments': 'Payments & Waivers',
-        'auditLogs': 'Audit Logs',
-        'systemHealth': 'System Health',
-        'configurations': 'Configurations'
-    };
-    
-    document.getElementById('pageTitle').textContent = titles[screen] || 'Dashboard';
-    
-    // Load screen content
-    loadScreen(screen);
-}
-
-// Load Screen Content
-function loadScreen(screen) {
-    const contentArea = document.getElementById('contentArea');
-    let html = '';
-    
-    switch(screen) {
-        case 'overview':
-            html = getOverviewDashboard();
-            break;
-        case 'users':
-            html = getUsersScreen();
-            break;
-        case 'userDetail':
-            html = getUserDetailScreen();
-            break;
-        case 'departments':
-            html = getDepartmentsScreen();
-            break;
-        case 'students':
-            html = getStudentsScreen();
-            break;
-        case 'courses':
-            html = getCoursesScreen();
-            break;
-        case 'registration':
-            html = getRegistrationScreen();
-            break;
-        case 'attendance':
-            html = getAttendanceScreen();
-            break;
-        case 'exams':
-            html = getExamsScreen();
-            break;
-        case 'assets':
-            html = getAssetsScreen();
-            break;
-        case 'assetDetail':
-            html = getAssetDetailScreen();
-            break;
-        case 'tickets':
-            html = getTicketsScreen();
-            break;
-        case 'ticketDetail':
-            html = getTicketDetailScreen();
-            break;
-        case 'hostel':
-            html = getHostelScreen();
-            break;
-        case 'facility':
-            html = getFacilityScreen();
-            break;
-        case 'feeStructure':
-            html = getFeeStructureScreen();
-            break;
-        case 'feeLedger':
-            html = getFeeLedgerScreen();
-            break;
-        case 'payments':
-            html = getPaymentsScreen();
-            break;
-        case 'auditLogs':
-            html = getAuditLogsScreen();
-            break;
-        case 'systemHealth':
-            html = getSystemHealthScreen();
-            break;
-        case 'configurations':
-            html = getConfigurationsScreen();
-            break;
-        default:
-            html = getOverviewDashboard();
-    }
-    
-    contentArea.innerHTML = html;
-}
-
-// Overview Dashboard
-function getOverviewDashboard() {
-    return `
-        <div class="kpi-grid">
-            <div class="kpi-card" onclick="navigateTo('students')">
-                <div class="kpi-header">
-                    <span class="kpi-label">Total Students</span>
-                    <div class="kpi-icon blue">🎓</div>
-                </div>
-                <div class="kpi-value">3,847</div>
-                <div class="kpi-change positive">↑ 124 from last term</div>
-            </div>
-            <div class="kpi-card" onclick="navigateTo('users')">
-                <div class="kpi-header">
-                    <span class="kpi-label">Active Faculty</span>
-                    <div class="kpi-icon green">👨‍🏫</div>
-                </div>
-                <div class="kpi-value">342</div>
-                <div class="kpi-change positive">↑ 12 new hires</div>
-            </div>
-            <div class="kpi-card" onclick="navigateTo('tickets')">
-                <div class="kpi-header">
-                    <span class="kpi-label">Open Tickets</span>
-                    <div class="kpi-icon red">🔧</div>
-                </div>
-                <div class="kpi-value">87</div>
-                <div class="kpi-change negative">↑ 15 pending SLA</div>
-            </div>
-            <div class="kpi-card" onclick="navigateTo('feeLedger')">
-                <div class="kpi-header">
-                    <span class="kpi-label">Pending Fees</span>
-                    <div class="kpi-icon orange">💰</div>
-                </div>
-                <div class="kpi-value">₹24.8L</div>
-                <div class="kpi-change neutral">412 students</div>
-            </div>
-            <div class="kpi-card" onclick="navigateTo('attendance')">
-                <div class="kpi-header">
-                    <span class="kpi-label">Avg Attendance</span>
-                    <div class="kpi-icon green">📅</div>
-                </div>
-                <div class="kpi-value">84.6%</div>
-                <div class="kpi-change positive">↑ 2.3% this week</div>
-            </div>
-            <div class="kpi-card" onclick="navigateTo('assets')">
-                <div class="kpi-header">
-                    <span class="kpi-label">Active Assets</span>
-                    <div class="kpi-icon purple">💼</div>
-                </div>
-                <div class="kpi-value">1,247</div>
-                <div class="kpi-change neutral">73 under maintenance</div>
-            </div>
-            <div class="kpi-card" onclick="navigateTo('hostel')">
-                <div class="kpi-header">
-                    <span class="kpi-label">Hostel Occupancy</span>
-                    <div class="kpi-icon blue">🏠</div>
-                </div>
-                <div class="kpi-value">92%</div>
-                <div class="kpi-change neutral">1,840 / 2,000 beds</div>
-            </div>
-            <div class="kpi-card" onclick="navigateTo('exams')">
-                <div class="kpi-header">
-                    <span class="kpi-label">Exam Submissions</span>
-                    <div class="kpi-icon orange">📄</div>
-                </div>
-                <div class="kpi-value">2,384</div>
-                <div class="kpi-change positive">98% completion</div>
-            </div>
-        </div>
+    // Initialize app
+    function initApp() {
+        // Check for saved theme
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+            document.getElementById('themeIcon').textContent = '☀️';
+        }
         
-        <div class="alert-panel">
-            <div class="alert-header">
-                <div class="alert-icon">⚠️</div>
-                <div class="alert-title">Critical Alerts & SLA Breaches</div>
-            </div>
-            <ul class="alert-list">
-                <li class="alert-item">
-                    <span>Ticket #MT-2847 - Library AC failure exceeded 48hr SLA</span>
-                    <span class="badge danger">Critical</span>
-                </li>
-                <li class="alert-item">
-                    <span>Fee collection rate below 70% for B.Tech 3rd Year</span>
-                    <span class="badge warning">Warning</span>
-                </li>
-                <li class="alert-item">
-                    <span>Database backup failed - last successful backup 36hrs ago</span>
-                    <span class="badge danger">Critical</span>
-                </li>
-                <li class="alert-item">
-                    <span>127 students with attendance below 75% (eligibility risk)</span>
-                    <span class="badge warning">Warning</span>
-                </li>
-                <li class="alert-item">
-                    <span>Hostel Block-C water supply issue - 8 complaints logged</span>
-                    <span class="badge danger">Critical</span>
-                </li>
-            </ul>
-        </div>
+        // Add navigation click handlers
+        document.querySelectorAll('.nav-item').forEach(item => {
+            item.addEventListener('click', function() {
+                const screen = this.getAttribute('data-screen');
+                navigateToScreen(screen);
+            });
+        });
         
-        <div class="table-container">
-            <div class="table-header">
-                <div class="table-title">Recent Activity (Last 24 Hours)</div>
-                <div class="table-filters">
-                    <select class="filter-select">
-                        <option>All Activities</option>
-                        <option>User Management</option>
-                        <option>Finance</option>
-                        <option>Operations</option>
-                    </select>
+        // Load overview screen
+        loadScreen('overview');
+    }
+
+    // Role Selection
+    function selectRole(role) {
+        selectedRole = role;
+        document.getElementById('roleSelectionScreen').classList.add('hidden');
+        document.getElementById('loginScreen').classList.remove('hidden');
+        
+        // Set role in login form
+        document.getElementById('loginRole').value = role;
+    }
+
+    // Handle Login
+    function handleLogin(event) {
+        event.preventDefault();
+        
+        const role = document.getElementById('loginRole').value;
+        const userId = document.getElementById('userId').value;
+        
+        // Mock authentication
+        currentUser = {
+            id: userId,
+            role: role,
+            name: 'Admin User'
+        };
+        
+        // Update role display
+        const roleMap = {
+            'student': 'Student',
+            'faculty': 'Faculty',
+            'admin': 'Administrator',
+            'operations': 'Operations Manager',
+            'management': 'Management'
+        };
+        document.getElementById('userRoleDisplay').textContent = roleMap[role];
+        
+        // Hide login, show main app
+        document.getElementById('loginScreen').classList.add('hidden');
+        document.getElementById('mainApp').classList.remove('hidden');
+        
+        initApp();
+    }
+
+    // Theme Toggle
+    function toggleTheme() {
+        document.body.classList.toggle('dark-mode');
+        const isDark = document.body.classList.contains('dark-mode');
+        document.getElementById('themeIcon').textContent = isDark ? '☀️' : '🌙';
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    }
+
+    // Navigation
+    function navigateToScreen(screen) {
+        currentScreen = screen;
+        
+        // Update active nav item
+        document.querySelectorAll('.nav-item').forEach(item => {
+            item.classList.remove('active');
+            if (item.getAttribute('data-screen') === screen) {
+                item.classList.add('active');
+            }
+        });
+        
+        // Load screen content
+        loadScreen(screen);
+    }
+
+    // Load Screen Content
+    function loadScreen(screen) {
+        const contentArea = document.getElementById('contentArea');
+        const titleMap = {
+            'overview': 'Overview Dashboard',
+            'users': 'User Management',
+            'departments': 'Department Management',
+            'students': 'Student Master',
+            'courses': 'Course & Curriculum',
+            'registration': 'Registration Control',
+            'attendance': 'Attendance Overview',
+            'exams': 'Exams & Results',
+            'assets': 'Asset Master',
+            'tickets': 'Maintenance Tickets',
+            'hostel': 'Hostel Management',
+            'facility': 'Facility Booking',
+            'feeStructure': 'Fee Structure',
+            'feeLedger': 'Student Fee Ledger',
+            'payments': 'Payments & Waivers',
+            'notices': 'Notices & Announcements',
+            'auditLogs': 'Audit Logs',
+            'systemHealth': 'System Health',
+            'configurations': 'System Configurations'
+        };
+        
+        document.getElementById('pageTitle').textContent = titleMap[screen] || 'Dashboard';
+        
+        // Load screen-specific content
+        switch(screen) {
+            case 'overview':
+                contentArea.innerHTML = getOverviewScreen();
+                attachOverviewHandlers();
+                break;
+            case 'users':
+                contentArea.innerHTML = getUsersScreen();
+                break;
+            case 'departments':
+                contentArea.innerHTML = getDepartmentsScreen();
+                break;
+            case 'students':
+                contentArea.innerHTML = getStudentsScreen();
+                break;
+            case 'courses':
+                contentArea.innerHTML = getCoursesScreen();
+                break;
+            case 'registration':
+                contentArea.innerHTML = getRegistrationScreen();
+                break;
+            case 'attendance':
+                contentArea.innerHTML = getAttendanceScreen();
+                break;
+            case 'exams':
+                contentArea.innerHTML = getExamsScreen();
+                break;
+            case 'assets':
+                contentArea.innerHTML = getAssetsScreen();
+                break;
+            case 'tickets':
+                contentArea.innerHTML = getTicketsScreen();
+                break;
+            case 'hostel':
+                contentArea.innerHTML = getHostelScreen();
+                break;
+            case 'facility':
+                contentArea.innerHTML = getFacilityScreen();
+                break;
+            case 'feeStructure':
+                contentArea.innerHTML = getFeeStructureScreen();
+                break;
+            case 'feeLedger':
+                contentArea.innerHTML = getFeeLedgerScreen();
+                break;
+            case 'payments':
+                contentArea.innerHTML = getPaymentsScreen();
+                break;
+            case 'notices':
+                contentArea.innerHTML = getNoticesScreen();
+                break;
+            case 'auditLogs':
+                contentArea.innerHTML = getAuditLogsScreen();
+                break;
+            case 'systemHealth':
+                contentArea.innerHTML = getSystemHealthScreen();
+                break;
+            case 'configurations':
+                contentArea.innerHTML = getConfigurationsScreen();
+                break;
+            default:
+                contentArea.innerHTML = getOverviewScreen();
+        }
+    }
+
+    // Overview Screen
+    function getOverviewScreen() {
+        return `
+            <div class="kpi-grid">
+                <div class="kpi-card" onclick="navigateToScreen('students')">
+                    <div class="kpi-header">
+                        <span class="kpi-label">Total Students</span>
+                        <div class="kpi-icon blue">🎓</div>
+                    </div>
+                    <div class="kpi-value">2,547</div>
+                    <div class="kpi-change positive">↑ 12.5% from last year</div>
+                </div>
+                
+                <div class="kpi-card" onclick="navigateToScreen('users')">
+                    <div class="kpi-header">
+                        <span class="kpi-label">Faculty Members</span>
+                        <div class="kpi-icon green">👨‍🏫</div>
+                    </div>
+                    <div class="kpi-value">187</div>
+                    <div class="kpi-change positive">↑ 5 new this month</div>
+                </div>
+                
+                <div class="kpi-card" onclick="navigateToScreen('tickets')">
+                    <div class="kpi-header">
+                        <span class="kpi-label">Open Tickets</span>
+                        <div class="kpi-icon red">🔧</div>
+                    </div>
+                    <div class="kpi-value">42</div>
+                    <div class="kpi-change negative">↑ 8 pending</div>
+                </div>
+                
+                <div class="kpi-card" onclick="navigateToScreen('feeLedger')">
+                    <div class="kpi-header">
+                        <span class="kpi-label">Fee Collection</span>
+                        <div class="kpi-icon orange">💰</div>
+                    </div>
+                    <div class="kpi-value">₹ 3.2 Cr</div>
+                    <div class="kpi-change positive">↑ 89.5% collected</div>
+                </div>
+                
+                <div class="kpi-card" onclick="navigateToScreen('attendance')">
+                    <div class="kpi-header">
+                        <span class="kpi-label">Avg Attendance</span>
+                        <div class="kpi-icon blue">📅</div>
+                    </div>
+                    <div class="kpi-value">87.3%</div>
+                    <div class="kpi-change positive">↑ 2.1% this week</div>
+                </div>
+                
+                <div class="kpi-card" onclick="navigateToScreen('assets')">
+                    <div class="kpi-header">
+                        <span class="kpi-label">Total Assets</span>
+                        <div class="kpi-icon purple">💼</div>
+                    </div>
+                    <div class="kpi-value">1,842</div>
+                    <div class="kpi-change neutral">12 under maintenance</div>
+                </div>
+                
+                <div class="kpi-card" onclick="navigateToScreen('hostel')">
+                    <div class="kpi-header">
+                        <span class="kpi-label">Hostel Occupancy</span>
+                        <div class="kpi-icon green">🏠</div>
+                    </div>
+                    <div class="kpi-value">92%</div>
+                    <div class="kpi-change positive">845 / 918 beds</div>
+                </div>
+                
+                <div class="kpi-card" onclick="navigateToScreen('exams')">
+                    <div class="kpi-header">
+                        <span class="kpi-label">Upcoming Exams</span>
+                        <div class="kpi-icon orange">📄</div>
+                    </div>
+                    <div class="kpi-value">24</div>
+                    <div class="kpi-change neutral">Next: Dec 15, 2024</div>
                 </div>
             </div>
-            <div class="table-wrapper">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Timestamp</th>
-                            <th>User</th>
-                            <th>Activity Type</th>
-                            <th>Description</th>
-                            <th>Department</th>
-                            <th>Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>2026-01-30 12:47</td><td>Dr. Sharma (FAC-2847)</td><td>Grade Entry</td><td>Updated final grades for CSE-401 (34 students)</td><td>Computer Science</td><td><span class="badge success">Completed</span></td></tr>
-                        <tr><td>2026-01-30 12:32</td><td>Admin User</td><td>User Created</td><td>New faculty account: Prof. Meera Kumar</td><td>Mathematics</td><td><span class="badge success">Active</span></td></tr>
-                        <tr><td>2026-01-30 12:18</td><td>Finance Dept</td><td>Payment Received</td><td>Fee payment of ₹85,000 - Student ID: STU-2024-3847</td><td>Finance</td><td><span class="badge success">Verified</span></td></tr>
-                        <tr><td>2026-01-30 11:54</td><td>Maintenance Staff</td><td>Ticket Resolved</td><td>Fixed classroom projector - Ticket #MT-2891</td><td>Operations</td><td><span class="badge success">Closed</span></td></tr>
-                        <tr><td>2026-01-30 11:38</td><td>Dean Office</td><td>Waiver Approved</td><td>Fee waiver of ₹25,000 for STU-2023-1847</td><td>Finance</td><td><span class="badge success">Approved</span></td></tr>
-                        <tr><td>2026-01-30 11:15</td><td>Hostel Warden</td><td>Room Allocation</td><td>Assigned room B-304 to STU-2026-0142</td><td>Hostel</td><td><span class="badge success">Allocated</span></td></tr>
-                        <tr><td>2026-01-30 10:58</td><td>System</td><td>Bulk Notification</td><td>Sent exam schedule to 3,847 students</td><td>Academics</td><td><span class="badge info">Sent</span></td></tr>
-                        <tr><td>2026-01-30 10:42</td><td>Dr. Patel</td><td>Attendance Marked</td><td>ECE-302 lecture attendance (42 present, 3 absent)</td><td>Electronics</td><td><span class="badge success">Submitted</span></td></tr>
-                        <tr><td>2026-01-30 10:25</td><td>Asset Manager</td><td>Asset Updated</td><td>Updated AMC status for Lab Equipment ID: AST-LAB-0472</td><td>Operations</td><td><span class="badge info">Updated</span></td></tr>
-                        <tr><td>2026-01-30 10:11</td><td>Student (STU-2024-2847)</td><td>Course Registration</td><td>Registered for Elective: Machine Learning</td><td>Computer Science</td><td><span class="badge success">Confirmed</span></td></tr>
-                        <tr><td>2026-01-30 09:54</td><td>Admin User</td><td>Role Changed</td><td>Promoted user ID: FAC-1847 to HOD role</td><td>Mechanical</td><td><span class="badge warning">Role Updated</span></td></tr>
-                        <tr><td>2026-01-30 09:38</td><td>Exam Controller</td><td>Result Published</td><td>Published mid-term results for B.Tech 2nd Year</td><td>Academics</td><td><span class="badge success">Published</span></td></tr>
-                        <tr><td>2026-01-30 09:22</td><td>Facility Manager</td><td>Booking Approved</td><td>Auditorium booked for Tech Fest (Feb 15-17)</td><td>Events</td><td><span class="badge success">Confirmed</span></td></tr>
-                        <tr><td>2026-01-30 09:05</td><td>Maintenance Team</td><td>Ticket Created</td><td>New ticket: Hostel Block-D Wi-Fi connectivity issue</td><td>Operations</td><td><span class="badge warning">Open</span></td></tr>
-                        <tr><td>2026-01-30 08:47</td><td>Finance Dept</td><td>Refund Processed</td><td>Processed refund of ₹12,000 - STU-2023-2847</td><td>Finance</td><td><span class="badge success">Completed</span></td></tr>
-                        <tr><td>2026-01-30 08:31</td><td>System</td><td>Backup Completed</td><td>Daily database backup completed successfully</td><td>System</td><td><span class="badge success">Success</span></td></tr>
-                    </tbody>
-                </table>
+            
+            <div class="table-container">
+                <div class="table-header">
+                    <div class="table-title">Recent Activity</div>
+                    <div class="table-filters">
+                        <select class="filter-select">
+                            <option>All Activities</option>
+                            <option>Academic</option>
+                            <option>Operations</option>
+                            <option>Finance</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Timestamp</th>
+                                <th>User</th>
+                                <th>Activity</th>
+                                <th>Department</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2024-12-08 14:23</td>
+                                <td>Dr. Sarah Johnson</td>
+                                <td>Updated course syllabus - CS301</td>
+                                <td>Computer Science</td>
+                                <td><span class="badge success">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>2024-12-08 14:15</td>
+                                <td>Admin Team</td>
+                                <td>Published exam schedule</td>
+                                <td>Academic Affairs</td>
+                                <td><span class="badge success">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>2024-12-08 13:58</td>
+                                <td>Maintenance Dept</td>
+                                <td>Resolved ticket #MT-1842</td>
+                                <td>Operations</td>
+                                <td><span class="badge success">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>2024-12-08 13:45</td>
+                                <td>Finance Team</td>
+                                <td>Processed fee payment - 15 students</td>
+                                <td>Finance</td>
+                                <td><span class="badge success">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>2024-12-08 13:30</td>
+                                <td>Prof. Michael Chen</td>
+                                <td>Marked attendance - MATH201</td>
+                                <td>Mathematics</td>
+                                <td><span class="badge success">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>2024-12-08 13:12</td>
+                                <td>Student Affairs</td>
+                                <td>Approved hostel allocation - 8 students</td>
+                                <td>Student Services</td>
+                                <td><span class="badge success">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>2024-12-08 12:55</td>
+                                <td>IT Support</td>
+                                <td>Installed software update - Lab 3</td>
+                                <td>IT Services</td>
+                                <td><span class="badge success">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>2024-12-08 12:40</td>
+                                <td>Registrar Office</td>
+                                <td>Processed course registration - 42 students</td>
+                                <td>Academic Affairs</td>
+                                <td><span class="badge success">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>2024-12-08 12:28</td>
+                                <td>Library Services</td>
+                                <td>Ordered new books - 125 titles</td>
+                                <td>Library</td>
+                                <td><span class="badge warning">Pending Approval</span></td>
+                            </tr>
+                            <tr>
+                                <td>2024-12-08 12:10</td>
+                                <td>Transport Dept</td>
+                                <td>Updated bus routes</td>
+                                <td>Operations</td>
+                                <td><span class="badge success">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>2024-12-08 11:58</td>
+                                <td>HR Department</td>
+                                <td>Processed payroll - Faculty</td>
+                                <td>HR</td>
+                                <td><span class="badge success">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>2024-12-08 11:45</td>
+                                <td>Admissions Office</td>
+                                <td>Sent offer letters - 52 applicants</td>
+                                <td>Admissions</td>
+                                <td><span class="badge success">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>2024-12-08 11:30</td>
+                                <td>Sports Complex</td>
+                                <td>Equipment maintenance scheduled</td>
+                                <td>Sports</td>
+                                <td><span class="badge warning">Scheduled</span></td>
+                            </tr>
+                            <tr>
+                                <td>2024-12-08 11:15</td>
+                                <td>Dr. Emma Wilson</td>
+                                <td>Uploaded lecture materials - PHY202</td>
+                                <td>Physics</td>
+                                <td><span class="badge success">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>2024-12-08 11:00</td>
+                                <td>Cafeteria Manager</td>
+                                <td>Updated menu for next week</td>
+                                <td>Facilities</td>
+                                <td><span class="badge success">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>2024-12-08 10:45</td>
+                                <td>Placement Cell</td>
+                                <td>Scheduled campus interview - 5 companies</td>
+                                <td>Placements</td>
+                                <td><span class="badge info">Scheduled</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-        </div>
-        
-        <div class="table-container">
-            <div class="table-header">
-                <div class="table-title">Pending Actions</div>
-            </div>
-            <div class="table-wrapper">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Priority</th>
-                            <th>Action Required</th>
-                            <th>Assigned To</th>
-                            <th>Due Date</th>
-                            <th>Age</th>
-                            <th>Status</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td><span class="badge danger">High</span></td><td>Approve 24 pending fee waiver requests</td><td>Finance Head</td><td>2026-01-31</td><td>3 days</td><td><span class="badge warning">Pending</span></td><td><div class="action-cell"><button class="action-btn">Review</button></div></td></tr>
-                        <tr><td><span class="badge danger">High</span></td><td>Resolve critical maintenance ticket #MT-2847</td><td>Ops Manager</td><td>2026-01-30</td><td>2 days</td><td><span class="badge danger">Overdue</span></td><td><div class="action-cell"><button class="action-btn">Escalate</button></div></td></tr>
-                        <tr><td><span class="badge warning">Medium</span></td><td>Review and publish semester exam timetable</td><td>Exam Controller</td><td>2026-02-02</td><td>1 day</td><td><span class="badge warning">Pending</span></td><td><div class="action-cell"><button class="action-btn">Review</button></div></td></tr>
-                        <tr><td><span class="badge warning">Medium</span></td><td>Process hostel room allocation for 47 students</td><td>Hostel Warden</td><td>2026-02-01</td><td>2 days</td><td><span class="badge warning">Pending</span></td><td><div class="action-cell"><button class="action-btn">Process</button></div></td></tr>
-                        <tr><td><span class="badge danger">High</span></td><td>Update faculty workload allocation for new term</td><td>Dean Office</td><td>2026-01-31</td><td>4 days</td><td><span class="badge warning">In Progress</span></td><td><div class="action-cell"><button class="action-btn">Continue</button></div></td></tr>
-                        <tr><td><span class="badge info">Low</span></td><td>Verify asset audit report for IT equipment</td><td>Asset Manager</td><td>2026-02-05</td><td>1 day</td><td><span class="badge neutral">Pending</span></td><td><div class="action-cell"><button class="action-btn">Verify</button></div></td></tr>
-                        <tr><td><span class="badge warning">Medium</span></td><td>Approve facility bookings for student events</td><td>Admin Office</td><td>2026-02-03</td><td>2 days</td><td><span class="badge warning">Pending</span></td><td><div class="action-cell"><button class="action-btn">Approve</button></div></td></tr>
-                        <tr><td><span class="badge danger">High</span></td><td>Follow up on 127 students below attendance threshold</td><td>Academic Head</td><td>2026-01-31</td><td>5 days</td><td><span class="badge warning">In Progress</span></td><td><div class="action-cell"><button class="action-btn">Contact</button></div></td></tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    `;
-}
+        `;
+    }
 
-// Users Screen
-function getUsersScreen() {
-    return `
-        <div class="table-container">
-            <div class="table-header">
-                <div class="table-title">User Management</div>
+    function attachOverviewHandlers() {
+        // KPI cards already have onclick handlers in HTML
+    }
+
+    // Users Screen
+    function getUsersScreen() {
+        return `
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">User Management</div>
+                    <div class="card-actions">
+                        <button class="btn btn-secondary btn-sm">Export</button>
+                        <button class="btn btn-primary btn-sm">Add User</button>
+                    </div>
+                </div>
                 <div class="table-filters">
                     <select class="filter-select">
                         <option>All Roles</option>
                         <option>Admin</option>
                         <option>Faculty</option>
-                        <option>Staff</option>
                         <option>Student</option>
+                        <option>Staff</option>
                     </select>
                     <select class="filter-select">
                         <option>All Departments</option>
                         <option>Computer Science</option>
-                        <option>Electronics</option>
-                        <option>Mechanical</option>
-                        <option>Administration</option>
+                        <option>Mathematics</option>
+                        <option>Physics</option>
                     </select>
                     <select class="filter-select">
                         <option>All Status</option>
                         <option>Active</option>
                         <option>Inactive</option>
-                        <option>Suspended</option>
                     </select>
                     <input type="text" class="search-input" placeholder="Search users...">
-                    <button class="btn btn-primary btn-sm">Add User</button>
                 </div>
             </div>
-            <div class="table-wrapper">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>User ID</th>
-                            <th>Name</th>
-                            <th>Role</th>
-                            <th>Department</th>
-                            <th>Email</th>
-                            <th>Phone</th>
-                            <th>Status</th>
-                            <th>Last Login</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr onclick="navigateTo('userDetail')"><td>FAC-2024-0847</td><td>Dr. Rajesh Sharma</td><td>Faculty</td><td>Computer Science</td><td>rajesh.sharma@college.edu</td><td>+91-9876543210</td><td><span class="badge success">Active</span></td><td>2026-01-30 11:23</td><td><div class="action-cell"><button class="action-btn">Edit</button><button class="action-btn">View</button></div></td></tr>
-                        <tr onclick="navigateTo('userDetail')"><td>ADM-2023-0142</td><td>Priya Menon</td><td>Admin</td><td>Administration</td><td>priya.menon@college.edu</td><td>+91-9876543211</td><td><span class="badge success">Active</span></td><td>2026-01-30 12:45</td><td><div class="action-cell"><button class="action-btn">Edit</button><button class="action-btn">View</button></div></td></tr>
-                        <tr onclick="navigateTo('userDetail')"><td>FAC-2024-0563</td><td>Prof. Anita Desai</td><td>Faculty</td><td>Electronics</td><td>anita.desai@college.edu</td><td>+91-9876543212</td><td><span class="badge success">Active</span></td><td>2026-01-30 09:15</td><td><div class="action-cell"><button class="action-btn">Edit</button><button class="action-btn">View</button></div></td></tr>
-                        <tr onclick="navigateTo('userDetail')"><td>STF-2023-0284</td><td>Ramesh Kumar</td><td>Staff</td><td>Operations</td><td>ramesh.kumar@college.edu</td><td>+91-9876543213</td><td><span class="badge success">Active</span></td><td>2026-01-30 08:42</td><td><div class="action-cell"><button class="action-btn">Edit</button><button class="action-btn">View</button></div></td></tr>
-                        <tr onclick="navigateTo('userDetail')"><td>FAC-2022-0738</td><td>Dr. Vikram Mehta</td><td>Faculty (HOD)</td><td>Mechanical</td><td>vikram.mehta@college.edu</td><td>+91-9876543214</td><td><span class="badge success">Active</span></td><td>2026-01-30 10:38</td><td><div class="action-cell"><button class="action-btn">Edit</button><button class="action-btn">View</button></div></td></tr>
-                        <tr onclick="navigateTo('userDetail')"><td>ADM-2024-0091</td><td>Sneha Patel</td><td>Admin</td><td>Finance</td><td>sneha.patel@college.edu</td><td>+91-9876543215</td><td><span class="badge success">Active</span></td><td>2026-01-30 11:52</td><td><div class="action-cell"><button class="action-btn">Edit</button><button class="action-btn">View</button></div></td></tr>
-                        <tr onclick="navigateTo('userDetail')"><td>FAC-2023-0429</td><td>Dr. Sunita Rao</td><td>Faculty</td><td>Mathematics</td><td>sunita.rao@college.edu</td><td>+91-9876543216</td><td><span class="badge success">Active</span></td><td>2026-01-29 17:24</td><td><div class="action-cell"><button class="action-btn">Edit</button><button class="action-btn">View</button></div></td></tr>
-                        <tr onclick="navigateTo('userDetail')"><td>STF-2024-0156</td><td>Anil Verma</td><td>Staff</td><td>Hostel</td><td>anil.verma@college.edu</td><td>+91-9876543217</td><td><span class="badge success">Active</span></td><td>2026-01-30 07:18</td><td><div class="action-cell"><button class="action-btn">Edit</button><button class="action-btn">View</button></div></td></tr>
-                        <tr onclick="navigateTo('userDetail')"><td>FAC-2024-0672</td><td>Prof. Kavita Singh</td><td>Faculty</td><td>Civil Engineering</td><td>kavita.singh@college.edu</td><td>+91-9876543218</td><td><span class="badge success">Active</span></td><td>2026-01-30 09:54</td><td><div class="action-cell"><button class="action-btn">Edit</button><button class="action-btn">View</button></div></td></tr>
-                        <tr onclick="navigateTo('userDetail')"><td>ADM-2023-0247</td><td>Mohit Gupta</td><td>Admin</td><td>Exam Cell</td><td>mohit.gupta@college.edu</td><td>+91-9876543219</td><td><span class="badge success">Active</span></td><td>2026-01-30 12:11</td><td><div class="action-cell"><button class="action-btn">Edit</button><button class="action-btn">View</button></div></td></tr>
-                        <tr onclick="navigateTo('userDetail')"><td>FAC-2022-0891</td><td>Dr. Ashok Nair</td><td>Faculty</td><td>Physics</td><td>ashok.nair@college.edu</td><td>+91-9876543220</td><td><span class="badge warning">Inactive</span></td><td>2026-01-28 16:42</td><td><div class="action-cell"><button class="action-btn">Edit</button><button class="action-btn">View</button></div></td></tr>
-                        <tr onclick="navigateTo('userDetail')"><td>STF-2023-0384</td><td>Geeta Sharma</td><td>Staff</td><td>Library</td><td>geeta.sharma@college.edu</td><td>+91-9876543221</td><td><span class="badge success">Active</span></td><td>2026-01-30 08:27</td><td><div class="action-cell"><button class="action-btn">Edit</button><button class="action-btn">View</button></div></td></tr>
-                        <tr onclick="navigateTo('userDetail')"><td>FAC-2024-0518</td><td>Prof. Deepak Joshi</td><td>Faculty</td><td>Chemistry</td><td>deepak.joshi@college.edu</td><td>+91-9876543222</td><td><span class="badge success">Active</span></td><td>2026-01-30 10:15</td><td><div class="action-cell"><button class="action-btn">Edit</button><button class="action-btn">View</button></div></td></tr>
-                        <tr onclick="navigateTo('userDetail')"><td>ADM-2024-0073</td><td>Lakshmi Iyer</td><td>Admin</td><td>Admissions</td><td>lakshmi.iyer@college.edu</td><td>+91-9876543223</td><td><span class="badge success">Active</span></td><td>2026-01-30 11:38</td><td><div class="action-cell"><button class="action-btn">Edit</button><button class="action-btn">View</button></div></td></tr>
-                        <tr onclick="navigateTo('userDetail')"><td>FAC-2023-0647</td><td>Dr. Manoj Tripathi</td><td>Faculty</td><td>Electrical</td><td>manoj.tripathi@college.edu</td><td>+91-9876543224</td><td><span class="badge success">Active</span></td><td>2026-01-30 09:47</td><td><div class="action-cell"><button class="action-btn">Edit</button><button class="action-btn">View</button></div></td></tr>
-                        <tr onclick="navigateTo('userDetail')"><td>STF-2024-0192</td><td>Pooja Reddy</td><td>Staff</td><td>Accounts</td><td>pooja.reddy@college.edu</td><td>+91-9876543225</td><td><span class="badge success">Active</span></td><td>2026-01-30 11:05</td><td><div class="action-cell"><button class="action-btn">Edit</button><button class="action-btn">View</button></div></td></tr>
-                        <tr onclick="navigateTo('userDetail')"><td>FAC-2024-0723</td><td>Prof. Nisha Agarwal</td><td>Faculty</td><td>MBA</td><td>nisha.agarwal@college.edu</td><td>+91-9876543226</td><td><span class="badge success">Active</span></td><td>2026-01-29 18:32</td><td><div class="action-cell"><button class="action-btn">Edit</button><button class="action-btn">View</button></div></td></tr>
-                        <tr onclick="navigateTo('userDetail')"><td>ADM-2023-0328</td><td>Suresh Babu</td><td>Admin</td><td>IT Services</td><td>suresh.babu@college.edu</td><td>+91-9876543227</td><td><span class="badge success">Active</span></td><td>2026-01-30 12:28</td><td><div class="action-cell"><button class="action-btn">Edit</button><button class="action-btn">View</button></div></td></tr>
-                        <tr onclick="navigateTo('userDetail')"><td>FAC-2022-0584</td><td>Dr. Rekha Pillai</td><td>Faculty</td><td>Biotech</td><td>rekha.pillai@college.edu</td><td>+91-9876543228</td><td><span class="badge success">Active</span></td><td>2026-01-30 08:54</td><td><div class="action-cell"><button class="action-btn">Edit</button><button class="action-btn">View</button></div></td></tr>
-                        <tr onclick="navigateTo('userDetail')"><td>STF-2023-0451</td><td>Vikas Sharma</td><td>Staff</td><td>Sports</td><td>vikas.sharma@college.edu</td><td>+91-9876543229</td><td><span class="badge success">Active</span></td><td>2026-01-30 07:42</td><td><div class="action-cell"><button class="action-btn">Edit</button><button class="action-btn">View</button></div></td></tr>
-                        <tr onclick="navigateTo('userDetail')"><td>FAC-2024-0836</td><td>Prof. Meera Kumar</td><td>Faculty</td><td>Mathematics</td><td>meera.kumar@college.edu</td><td>+91-9876543230</td><td><span class="badge info">New</span></td><td>Never</td><td><div class="action-cell"><button class="action-btn">Edit</button><button class="action-btn">View</button></div></td></tr>
-                    </tbody>
-                </table>
+            
+            <div class="table-container">
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>User ID</th>
+                                <th>Name</th>
+                                <th>Role</th>
+                                <th>Department</th>
+                                <th>Email</th>
+                                <th>Status</th>
+                                <th>Last Login</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>USR-001</td>
+                                <td>Dr. Sarah Johnson</td>
+                                <td>Faculty</td>
+                                <td>Computer Science</td>
+                                <td>sarah.j@college.edu</td>
+                                <td><span class="badge success">Active</span></td>
+                                <td>2024-12-08 14:23</td>
+                                <td>
+                                    <div class="action-cell">
+                                        <button class="action-btn">Edit</button>
+                                        <button class="action-btn">View</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>USR-002</td>
+                                <td>Prof. Michael Chen</td>
+                                <td>Faculty</td>
+                                <td>Mathematics</td>
+                                <td>michael.c@college.edu</td>
+                                <td><span class="badge success">Active</span></td>
+                                <td>2024-12-08 13:30</td>
+                                <td>
+                                    <div class="action-cell">
+                                        <button class="action-btn">Edit</button>
+                                        <button class="action-btn">View</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>USR-003</td>
+                                <td>Admin User</td>
+                                <td>Admin</td>
+                                <td>Administration</td>
+                                <td>admin@college.edu</td>
+                                <td><span class="badge success">Active</span></td>
+                                <td>2024-12-08 14:45</td>
+                                <td>
+                                    <div class="action-cell">
+                                        <button class="action-btn">Edit</button>
+                                        <button class="action-btn">View</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>USR-004</td>
+                                <td>John Martinez</td>
+                                <td>Staff</td>
+                                <td>Operations</td>
+                                <td>john.m@college.edu</td>
+                                <td><span class="badge success">Active</span></td>
+                                <td>2024-12-08 13:58</td>
+                                <td>
+                                    <div class="action-cell">
+                                        <button class="action-btn">Edit</button>
+                                        <button class="action-btn">View</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>USR-005</td>
+                                <td>Dr. Emma Wilson</td>
+                                <td>Faculty</td>
+                                <td>Physics</td>
+                                <td>emma.w@college.edu</td>
+                                <td><span class="badge warning">On Leave</span></td>
+                                <td>2024-12-05 09:15</td>
+                                <td>
+                                    <div class="action-cell">
+                                        <button class="action-btn">Edit</button>
+                                        <button class="action-btn">View</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-        </div>
-    `;
-}
+        `;
+    }
 
-// Placeholder functions for other screens (abbreviated to save space - implement similarly)
-function getUserDetailScreen() { return `<button class="back-btn" onclick="navigateTo('users')">← Back to Users</button><div class="card"><div class="card-title">User Detail - Full implementation here</div></div>`; }
-function getDepartmentsScreen() { return `<div class="card"><div class="card-title">Departments - Full implementation here</div></div>`; }
-function getStudentsScreen() { return `<div class="card"><div class="card-title">Students - Full implementation here</div></div>`; }
-function getCoursesScreen() { return `<div class="card"><div class="card-title">Courses - Full implementation here</div></div>`; }
-function getRegistrationScreen() { return `<div class="card"><div class="card-title">Registration - Full implementation here</div></div>`; }
-function getAttendanceScreen() { return `<div class="card"><div class="card-title">Attendance - Full implementation here</div></div>`; }
-function getExamsScreen() { return `<div class="card"><div class="card-title">Exams - Full implementation here</div></div>`; }
-function getAssetsScreen() { return `<div class="card"><div class="card-title">Assets - Full implementation here</div></div>`; }
-function getAssetDetailScreen() { return `<button class="back-btn" onclick="navigateTo('assets')">← Back to Assets</button><div class="card"><div class="card-title">Asset Detail - Full implementation here</div></div>`; }
-function getTicketsScreen() { return `<div class="card"><div class="card-title">Tickets - Full implementation here</div></div>`; }
-function getTicketDetailScreen() { return `<button class="back-btn" onclick="navigateTo('tickets')">← Back to Tickets</button><div class="card"><div class="card-title">Ticket Detail - Full implementation here</div></div>`; }
-function getHostelScreen() { return `<div class="card"><div class="card-title">Hostel - Full implementation here</div></div>`; }
-function getFacilityScreen() { return `<div class="card"><div class="card-title">Facility - Full implementation here</div></div>`; }
-function getFeeStructureScreen() { return `<div class="card"><div class="card-title">Fee Structure - Full implementation here</div></div>`; }
-function getFeeLedgerScreen() { return `<div class="card"><div class="card-title">Fee Ledger - Full implementation here</div></div>`; }
-function getPaymentsScreen() { return `<div class="card"><div class="card-title">Payments - Full implementation here</div></div>`; }
-function getAuditLogsScreen() { return `<div class="card"><div class="card-title">Audit Logs - Full implementation here</div></div>`; }
-function getSystemHealthScreen() { return `<div class="card"><div class="card-title">System Health - Full implementation here</div></div>`; }
-function getConfigurationsScreen() { return `<div class="card"><div class="card-title">Configurations - Full implementation here</div></div>`; }
+    // Departments Screen
+    function getDepartmentsScreen() {
+        return `
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Department Management</div>
+                    <div class="card-actions">
+                        <button class="btn btn-secondary btn-sm">Export</button>
+                        <button class="btn btn-primary btn-sm">Add Department</button>
+                    </div>
+                </div>
+                <div class="table-filters">
+                    <input type="text" class="search-input" placeholder="Search departments...">
+                </div>
+            </div>
+            
+            <div class="table-container">
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Dept Code</th>
+                                <th>Department Name</th>
+                                <th>HOD</th>
+                                <th>Faculty Count</th>
+                                <th>Student Count</th>
+                                <th>Budget (₹)</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CSE</td>
+                                <td>Computer Science & Engineering</td>
+                                <td>Dr. Sarah Johnson</td>
+                                <td>45</td>
+                                <td>782</td>
+                                <td>₹ 2.5 Cr</td>
+                                <td><span class="badge success">Active</span></td>
+                                <td>
+                                    <div class="action-cell">
+                                        <button class="action-btn">Edit</button>
+                                        <button class="action-btn">View</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>MATH</td>
+                                <td>Mathematics</td>
+                                <td>Prof. Michael Chen</td>
+                                <td>28</td>
+                                <td>456</td>
+                                <td>₹ 1.2 Cr</td>
+                                <td><span class="badge success">Active</span></td>
+                                <td>
+                                    <div class="action-cell">
+                                        <button class="action-btn">Edit</button>
+                                        <button class="action-btn">View</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>PHY</td>
+                                <td>Physics</td>
+                                <td>Dr. Emma Wilson</td>
+                                <td>32</td>
+                                <td>523</td>
+                                <td>₹ 1.8 Cr</td>
+                                <td><span class="badge success">Active</span></td>
+                                <td>
+                                    <div class="action-cell">
+                                        <button class="action-btn">Edit</button>
+                                        <button class="action-btn">View</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>EEE</td>
+                                <td>Electrical & Electronics Engineering</td>
+                                <td>Dr. James Anderson</td>
+                                <td>38</td>
+                                <td>645</td>
+                                <td>₹ 2.1 Cr</td>
+                                <td><span class="badge success">Active</span></td>
+                                <td>
+                                    <div class="action-cell">
+                                        <button class="action-btn">Edit</button>
+                                        <button class="action-btn">View</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>MECH</td>
+                                <td>Mechanical Engineering</td>
+                                <td>Prof. Robert Taylor</td>
+                                <td>42</td>
+                                <td>721</td>
+                                <td>₹ 2.3 Cr</td>
+                                <td><span class="badge success">Active</span></td>
+                                <td>
+                                    <div class="action-cell">
+                                        <button class="action-btn">Edit</button>
+                                        <button class="action-btn">View</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        `;
+    }
 
+    // Students Screen
+    function getStudentsScreen() {
+        return `
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Student Master</div>
+                    <div class="card-actions">
+                        <button class="btn btn-secondary btn-sm">Export</button>
+                        <button class="btn btn-primary btn-sm">Add Student</button>
+                    </div>
+                </div>
+                <div class="table-filters">
+                    <select class="filter-select">
+                        <option>All Programs</option>
+                        <option>B.Tech CSE</option>
+                        <option>B.Tech EEE</option>
+                        <option>B.Sc Mathematics</option>
+                    </select>
+                    <select class="filter-select">
+                        <option>All Years</option>
+                        <option>1st Year</option>
+                        <option>2nd Year</option>
+                        <option>3rd Year</option>
+                        <option>4th Year</option>
+                    </select>
+                    <input type="text" class="search-input" placeholder="Search students...">
+                </div>
+            </div>
+            
+            <div class="table-container">
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Roll No</th>
+                                <th>Student Name</th>
+                                <th>Program</th>
+                                <th>Year</th>
+                                <th>Attendance %</th>
+                                <th>CGPA</th>
+                                <th>Fee Status</th>
+                                <th>Academic Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2023-CSE-001</td>
+                                <td>Aditya Sharma</td>
+                                <td>B.Tech CSE</td>
+                                <td>2nd Year</td>
+                                <td>92%</td>
+                                <td>8.45</td>
+                                <td><span class="badge success">Paid</span></td>
+                                <td><span class="badge success">Regular</span></td>
+                                <td>
+                                    <div class="action-cell">
+                                        <button class="action-btn">Edit</button>
+                                        <button class="action-btn">View</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2023-CSE-002</td>
+                                <td>Priya Singh</td>
+                                <td>B.Tech CSE</td>
+                                <td>2nd Year</td>
+                                <td>88%</td>
+                                <td>9.12</td>
+                                <td><span class="badge success">Paid</span></td>
+                                <td><span class="badge success">Regular</span></td>
+                                <td>
+                                    <div class="action-cell">
+                                        <button class="action-btn">Edit</button>
+                                        <button class="action-btn">View</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2022-EEE-045</td>
+                                <td>Rohan Das</td>
+                                <td>B.Tech EEE</td>
+                                <td>3rd Year</td>
+                                <td>76%</td>
+                                <td>7.28</td>
+                                <td><span class="badge warning">Pending</span></td>
+                                <td><span class="badge warning">Backlog</span></td>
+                                <td>
+                                    <div class="action-cell">
+                                        <button class="action-btn">Edit</button>
+                                        <button class="action-btn">View</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2024-CSE-089</td>
+                                <td>Sneha Patel</td>
+                                <td>B.Tech CSE</td>
+                                <td>1st Year</td>
+                                <td>95%</td>
+                                <td>9.45</td>
+                                <td><span class="badge success">Paid</span></td>
+                                <td><span class="badge success">Regular</span></td>
+                                <td>
+                                    <div class="action-cell">
+                                        <button class="action-btn">Edit</button>
+                                        <button class="action-btn">View</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2021-MECH-112</td>
+                                <td>Vikram Kumar</td>
+                                <td>B.Tech MECH</td>
+                                <td>4th Year</td>
+                                <td>82%</td>
+                                <td>8.12</td>
+                                <td><span class="badge success">Paid</span></td>
+                                <td><span class="badge success">Regular</span></td>
+                                <td>
+                                    <div class="action-cell">
+                                        <button class="action-btn">Edit</button>
+                                        <button class="action-btn">View</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        `;
+    }
+
+    // Courses Screen
+    function getCoursesScreen() {
+        return `
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Course & Curriculum Management</div>
+                    <div class="card-actions">
+                        <button class="btn btn-secondary btn-sm">Export Catalog</button>
+                        <button class="btn btn-primary btn-sm">Add Course</button>
+                    </div>
+                </div>
+                
+                <p style="padding: 20px; color: #718096;">
+                    Course management module allows you to:
+                    <ul style="margin-top: 10px; margin-left: 20px; line-height: 1.8;">
+                        <li>Create and manage course catalog</li>
+                        <li>Define curriculum structure by program</li>
+                        <li>Set credit requirements and prerequisites</li>
+                        <li>Map courses to semesters</li>
+                        <li>Manage course offerings by term</li>
+                    </ul>
+                </p>
+                
+                <div class="table-filters">
+                    <select class="filter-select">
+                        <option>All Departments</option>
+                        <option>Computer Science</option>
+                        <option>Mathematics</option>
+                        <option>Physics</option>
+                    </select>
+                    <select class="filter-select">
+                        <option>All Levels</option>
+                        <option>100 Level</option>
+                        <option>200 Level</option>
+                        <option>300 Level</option>
+                        <option>400 Level</option>
+                    </select>
+                    <input type="text" class="search-input" placeholder="Search courses...">
+                </div>
+            </div>
+            
+            <div class="table-container">
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Course Code</th>
+                                <th>Course Name</th>
+                                <th>Credits</th>
+                                <th>Department</th>
+                                <th>Type</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CS101</td>
+                                <td>Introduction to Computer Science</td>
+                                <td>4.0</td>
+                                <td>Computer Science</td>
+                                <td><span class="badge info">Core</span></td>
+                                <td><span class="badge success">Active</span></td>
+                                <td>
+                                    <div class="action-cell">
+                                        <button class="action-btn">Edit</button>
+                                        <button class="action-btn">View</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>MATH201</td>
+                                <td>Linear Algebra</td>
+                                <td>3.0</td>
+                                <td>Mathematics</td>
+                                <td><span class="badge info">Core</span></td>
+                                <td><span class="badge success">Active</span></td>
+                                <td>
+                                    <div class="action-cell">
+                                        <button class="action-btn">Edit</button>
+                                        <button class="action-btn">View</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>CS305</td>
+                                <td>Database Systems</td>
+                                <td>4.0</td>
+                                <td>Computer Science</td>
+                                <td><span class="badge info">Core</span></td>
+                                <td><span class="badge success">Active</span></td>
+                                <td>
+                                    <div class="action-cell">
+                                        <button class="action-btn">Edit</button>
+                                        <button class="action-btn">View</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>PHY202</td>
+                                <td>General Physics II</td>
+                                <td>4.0</td>
+                                <td>Physics</td>
+                                <td><span class="badge info">Core</span></td>
+                                <td><span class="badge success">Active</span></td>
+                                <td>
+                                    <div class="action-cell">
+                                        <button class="action-btn">Edit</button>
+                                        <button class="action-btn">View</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>CS410</td>
+                                <td>Machine Learning</td>
+                                <td>3.0</td>
+                                <td>Computer Science</td>
+                                <td><span class="badge warning">Elective</span></td>
+                                <td><span class="badge success">Active</span></td>
+                                <td>
+                                    <div class="action-cell">
+                                        <button class="action-btn">Edit</button>
+                                        <button class="action-btn">View</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        `;
+    }
+
+    // Registration Screen
+    function getRegistrationScreen() {
+        return `
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Course Registration Control</div>
+                    <div class="card-actions">
+                        <button class="btn btn-secondary btn-sm">Save Draft</button>
+                        <button class="btn btn-primary btn-sm">Publish Window</button>
+                    </div>
+                </div>
+                
+                <p style="padding: 20px; color: #718096;">
+                    Registration control panel allows you to:
+                    <ul style="margin-top: 10px; margin-left: 20px; line-height: 1.8;">
+                        <li>Define registration windows by term and program</li>
+                        <li>Set credit limits and enrollment capacity</li>
+                        <li>Configure add/drop deadlines</li>
+                        <li>Enable/disable advisor approval requirements</li>
+                        <li>Manage late registration policies and fees</li>
+                        <li>Control program-specific eligibility rules</li>
+                    </ul>
+                </p>
+            </div>
+            
+            <div class="card">
+                <h3 style="font-size: 16px; font-weight: 700; margin-bottom: 16px;">Registration Window Settings</h3>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+                    <div>
+                        <label style="display: block; font-size: 13px; font-weight: 500; margin-bottom: 8px;">Academic Year</label>
+                        <select class="filter-select" style="width: 100%;">
+                            <option>2024 - 2025</option>
+                            <option>2023 - 2024</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label style="display: block; font-size: 13px; font-weight: 500; margin-bottom: 8px;">Term</label>
+                        <select class="filter-select" style="width: 100%;">
+                            <option>Fall Semester</option>
+                            <option>Spring Semester</option>
+                            <option>Summer Term</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label style="display: block; font-size: 13px; font-weight: 500; margin-bottom: 8px;">Start Date & Time</label>
+                        <input type="datetime-local" class="search-input" style="width: 100%;" value="2024-08-15T08:00">
+                    </div>
+                    <div>
+                        <label style="display: block; font-size: 13px; font-weight: 500; margin-bottom: 8px;">End Date & Time</label>
+                        <input type="datetime-local" class="search-input" style="width: 100%;" value="2024-08-25T23:59">
+                    </div>
+                    <div>
+                        <label style="display: block; font-size: 13px; font-weight: 500; margin-bottom: 8px;">Max Credits Per Student</label>
+                        <input type="number" class="search-input" style="width: 100%;" value="18">
+                    </div>
+                    <div>
+                        <label style="display: block; font-size: 13px; font-weight: 500; margin-bottom: 8px;">Grace Period (Hours)</label>
+                        <input type="number" class="search-input" style="width: 100%;" value="0">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h3 style="font-size: 16px; font-weight: 700; margin-bottom: 16px;">Rules & Policies</h3>
+                <div style="display: flex; flex-direction: column; gap: 16px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <div style="font-weight: 600; margin-bottom: 4px;">Allow Add/Drop</div>
+                            <div style="font-size: 12px; color: #718096;">Students can modify courses after initial registration</div>
+                        </div>
+                        <label style="position: relative; display: inline-block; width: 44px; height: 24px;">
+                            <input type="checkbox" checked style="opacity: 0; width: 0; height: 0;">
+                            <span style="position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background: #4a90e2; transition: .4s; border-radius: 24px; box-shadow: inset 0 0 2px rgba(0,0,0,0.1);"></span>
+                        </label>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <div style="font-weight: 600; margin-bottom: 4px;">Advisor Approval</div>
+                            <div style="font-size: 12px; color: #718096;">Require advisor sign-off before confirming schedule</div>
+                        </div>
+                        <label style="position: relative; display: inline-block; width: 44px; height: 24px;">
+                            <input type="checkbox" style="opacity: 0; width: 0; height: 0;">
+                            <span style="position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background: #cbd5e0; transition: .4s; border-radius: 24px; box-shadow: inset 0 0 2px rgba(0,0,0,0.1);"></span>
+                        </label>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <div style="font-weight: 600; margin-bottom: 4px;">Late Registration</div>
+                            <div style="font-size: 12px; color: #718096;">Allow registration after window close with fee</div>
+                        </div>
+                        <label style="position: relative; display: inline-block; width: 44px; height: 24px;">
+                            <input type="checkbox" checked style="opacity: 0; width: 0; height: 0;">
+                            <span style="position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background: #4a90e2; transition: .4s; border-radius: 24px; box-shadow: inset 0 0 2px rgba(0,0,0,0.1);"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+
+    // Attendance Screen
+    function getAttendanceScreen() {
+        return `
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Attendance Overview</div>
+                    <div class="card-actions">
+                        <button class="btn btn-secondary btn-sm">Export Report</button>
+                        <button class="btn btn-primary btn-sm">Mark Attendance</button>
+                    </div>
+                </div>
+                
+                <p style="padding: 20px; color: #718096;">
+                    Attendance tracking system provides:
+                    <ul style="margin-top: 10px; margin-left: 20px; line-height: 1.8;">
+                        <li>Real-time attendance marking and tracking</li>
+                        <li>Student-wise and course-wise reports</li>
+                        <li>Low attendance alerts and notifications</li>
+                        <li>Biometric and manual entry integration</li>
+                        <li>Leave management and approvals</li>
+                        <li>Automated percentage calculations</li>
+                    </ul>
+                </p>
+                
+                <div class="kpi-grid">
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <span class="kpi-label">Today's Attendance</span>
+                            <div class="kpi-icon green">✓</div>
+                        </div>
+                        <div class="kpi-value">89.2%</div>
+                        <div class="kpi-change positive">2,272 / 2,547 students</div>
+                    </div>
+                    
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <span class="kpi-label">Weekly Average</span>
+                            <div class="kpi-icon blue">📅</div>
+                        </div>
+                        <div class="kpi-value">87.8%</div>
+                        <div class="kpi-change positive">↑ 1.5% from last week</div>
+                    </div>
+                    
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <span class="kpi-label">Low Attendance Alerts</span>
+                            <div class="kpi-icon red">⚠️</div>
+                        </div>
+                        <div class="kpi-value">142</div>
+                        <div class="kpi-change negative">Students below 75%</div>
+                    </div>
+                    
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <span class="kpi-label">Leave Requests</span>
+                            <div class="kpi-icon orange">📋</div>
+                        </div>
+                        <div class="kpi-value">28</div>
+                        <div class="kpi-change neutral">Pending approval</div>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+
+    // Exams Screen
+    function getExamsScreen() {
+        return `
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Exam Schedule Management</div>
+                    <div class="card-actions">
+                        <button class="btn btn-secondary btn-sm">Audit Log</button>
+                        <button class="btn btn-primary btn-sm">Publish Schedule</button>
+                    </div>
+                </div>
+                
+                <p style="padding: 20px; color: #718096;">
+                    Examination management system includes:
+                    <ul style="margin-top: 10px; margin-left: 20px; line-height: 1.8;">
+                        <li>Create and manage exam schedules</li>
+                        <li>Venue allocation and capacity management</li>
+                        <li>Conflict detection and resolution</li>
+                        <li>Invigilator assignment</li>
+                        <li>Hall ticket generation</li>
+                        <li>Result processing and grade publication</li>
+                    </ul>
+                </p>
+                
+                <div class="kpi-grid">
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <span class="kpi-label">Total Exams</span>
+                            <div class="kpi-icon blue">📄</div>
+                        </div>
+                        <div class="kpi-value">42</div>
+                        <div class="kpi-change neutral">Fall 2024 Term</div>
+                    </div>
+                    
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <span class="kpi-label">Scheduled</span>
+                            <div class="kpi-icon green">✓</div>
+                        </div>
+                        <div class="kpi-value">38</div>
+                        <div class="kpi-change positive">90.5% complete</div>
+                    </div>
+                    
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <span class="kpi-label">Conflicts</span>
+                            <div class="kpi-icon red">⚠️</div>
+                        </div>
+                        <div class="kpi-value">2</div>
+                        <div class="kpi-change negative">Needs resolution</div>
+                    </div>
+                    
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <span class="kpi-label">Venues Used</span>
+                            <div class="kpi-icon orange">🏛️</div>
+                        </div>
+                        <div class="kpi-value">12</div>
+                        <div class="kpi-change neutral">Halls & Labs</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="table-container">
+                <div class="table-header">
+                    <div class="table-title">Exam Schedule (Draft)</div>
+                    <div class="table-filters">
+                        <select class="filter-select">
+                            <option>All Departments</option>
+                            <option>Computer Science</option>
+                            <option>Mathematics</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Code</th>
+                                <th>Course Name</th>
+                                <th>Date</th>
+                                <th>Time Slot</th>
+                                <th>Type</th>
+                                <th>Venue</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CS101</td>
+                                <td>Intro to Programming</td>
+                                <td>Dec 10, 2024</td>
+                                <td>09:00 - 12:00</td>
+                                <td><span class="badge info">Written</span></td>
+                                <td>Hall A (Capacity: 200)</td>
+                                <td>
+                                    <button class="action-btn">Edit</button>
+                                </td>
+                            </tr>
+                            <tr style="background: rgba(231, 76, 60, 0.05); border-left: 3px solid #e74c3c;">
+                                <td>CS204</td>
+                                <td>Data Structures</td>
+                                <td>Dec 10, 2024</td>
+                                <td style="color: #e74c3c; font-weight: 600;">09:00 - 12:00 ⚠️</td>
+                                <td><span class="badge warning">Lab</span></td>
+                                <td>Lab 3 (Capacity: 45)</td>
+                                <td>
+                                    <button class="action-btn">Edit</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>MATH201</td>
+                                <td>Linear Algebra</td>
+                                <td>Dec 11, 2024</td>
+                                <td>14:00 - 17:00</td>
+                                <td><span class="badge info">Written</span></td>
+                                <td>Hall B (Capacity: 150)</td>
+                                <td>
+                                    <button class="action-btn">Edit</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>ENG105</td>
+                                <td>Technical Writing</td>
+                                <td>Dec 12, 2024</td>
+                                <td>09:00 - 11:00</td>
+                                <td><span class="badge success">Online</span></td>
+                                <td>Remote Proctoring</td>
+                                <td>
+                                    <button class="action-btn">Edit</button>
+                                </td>
+                            </tr>
+                            <tr style="background: rgba(230, 126, 34, 0.05); border-left: 3px solid #e67e22;">
+                                <td>CS305</td>
+                                <td>Database Systems</td>
+                                <td>Dec 13, 2024</td>
+                                <td>13:00 - 16:00</td>
+                                <td><span class="badge info">Written</span></td>
+                                <td>Hall C (Cap: 50) ⚠️</td>
+                                <td>
+                                    <button class="action-btn">Edit</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        `;
+    }
+
+    // Assets Screen
+    function getAssetsScreen() {
+        return `
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Asset Management</div>
+                    <div class="card-actions">
+                        <button class="btn btn-secondary btn-sm">Export Report</button>
+                        <button class="btn btn-primary btn-sm">Add Asset</button>
+                    </div>
+                </div>
+                
+                <div class="table-filters">
+                    <select class="filter-select">
+                        <option>All Locations</option>
+                        <option>Science Block A</option>
+                        <option>Library</option>
+                        <option>Engineering Hall</option>
+                    </select>
+                    <select class="filter-select">
+                        <option>All Types</option>
+                        <option>Furniture</option>
+                        <option>IT Equipment</option>
+                        <option>Lab Equipment</option>
+                    </select>
+                    <input type="text" class="search-input" placeholder="Search by ID, Type, or Location...">
+                </div>
+            </div>
+            
+            <div class="table-container">
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Asset ID</th>
+                                <th>Type</th>
+                                <th>Location</th>
+                                <th>Condition</th>
+                                <th>Status</th>
+                                <th>Last Maintenance</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>AST-2023-001</td>
+                                <td>📹 Projector</td>
+                                <td>Science Block A, Rm 101</td>
+                                <td>
+                                    <div style="display: flex; align-items: center; gap: 6px;">
+                                        <div style="width: 8px; height: 8px; border-radius: 50%; background: #2ecc71;"></div>
+                                        Good
+                                    </div>
+                                </td>
+                                <td><span class="badge success">Active</span></td>
+                                <td>Nov 15, 2024</td>
+                                <td>
+                                    <div class="action-cell">
+                                        <button class="action-btn">Edit</button>
+                                        <button class="action-btn">View</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>AST-2023-042</td>
+                                <td>💻 Computer</td>
+                                <td>Lab 3</td>
+                                <td>
+                                    <div style="display: flex; align-items: center; gap: 6px;">
+                                        <div style="width: 8px; height: 8px; border-radius: 50%; background: #2ecc71;"></div>
+                                        Good
+                                    </div>
+                                </td>
+                                <td><span class="badge success">Active</span></td>
+                                <td>Oct 20, 2024</td>
+                                <td>
+                                    <div class="action-cell">
+                                        <button class="action-btn">Edit</button>
+                                        <button class="action-btn">View</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr style="background: rgba(230, 126, 34, 0.05);">
+                                <td>AST-2022-158</td>
+                                <td>🪑 Furniture</td>
+                                <td>Library, Floor 2</td>
+                                <td>
+                                    <div style="display: flex; align-items: center; gap: 6px;">
+                                        <div style="width: 8px; height: 8px; border-radius: 50%; background: #e67e22;"></div>
+                                        Fair
+                                    </div>
+                                </td>
+                                <td><span class="badge warning">Maintenance</span></td>
+                                <td>Sep 05, 2024</td>
+                                <td>
+                                    <div class="action-cell">
+                                        <button class="action-btn">Edit</button>
+                                        <button class="action-btn">View</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>AST-2023-089</td>
+                                <td>🔬 Lab Equipment</td>
+                                <td>Physics Lab</td>
+                                <td>
+                                    <div style="display: flex; align-items: center; gap: 6px;">
+                                        <div style="width: 8px; height: 8px; border-radius: 50%; background: #2ecc71;"></div>
+                                        Excellent
+                                    </div>
+                                </td>
+                                <td><span class="badge success">Active</span></td>
+                                <td>Nov 28, 2024</td>
+                                <td>
+                                    <div class="action-cell">
+                                        <button class="action-btn">Edit</button>
+                                        <button class="action-btn">View</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr style="background: rgba(231, 76, 60, 0.05);">
+                                <td>AST-2021-234</td>
+                                <td>🖨️ Printer</td>
+                                <td>Admin Office</td>
+                                <td>
+                                    <div style="display: flex; align-items: center; gap: 6px;">
+                                        <div style="width: 8px; height: 8px; border-radius: 50%; background: #e74c3c;"></div>
+                                        Poor
+                                    </div>
+                                </td>
+                                <td><span class="badge danger">Retired</span></td>
+                                <td>Mar 12, 2024</td>
+                                <td>
+                                    <div class="action-cell">
+                                        <button class="action-btn">Edit</button>
+                                        <button class="action-btn">View</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        `;
+    }
+
+    // Tickets Screen
+    function getTicketsScreen() {
+        return `
+            <div class="kpi-grid">
+                <div class="kpi-card">
+                    <div class="kpi-header">
+                        <span class="kpi-label">Total Open Requests</span>
+                        <div class="kpi-icon blue">📂</div>
+                    </div>
+                    <div class="kpi-value">42</div>
+                    <div class="kpi-change positive">↑ 12% this week</div>
+                </div>
+                
+                <div class="kpi-card">
+                    <div class="kpi-header">
+                        <span class="kpi-label">SLA Breaches</span>
+                        <div class="kpi-icon red">⚠️</div>
+                    </div>
+                    <div class="kpi-value">5</div>
+                    <div class="kpi-change negative">+2 Today</div>
+                </div>
+                
+                <div class="kpi-card">
+                    <div class="kpi-header">
+                        <span class="kpi-label">Unassigned Tickets</span>
+                        <div class="kpi-icon orange">📋</div>
+                    </div>
+                    <div class="kpi-value">12</div>
+                    <div class="kpi-change neutral">Needs Action</div>
+                </div>
+                
+                <div class="kpi-card">
+                    <div class="kpi-header">
+                        <span class="kpi-label">Avg Resolution Time</span>
+                        <div class="kpi-icon green">⏱️</div>
+                    </div>
+                    <div class="kpi-value">4.2 hrs</div>
+                    <div class="kpi-change positive">↓ 15% improvement</div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Maintenance Requests</div>
+                    <div class="card-actions">
+                        <button class="btn btn-secondary btn-sm">Export Report</button>
+                        <button class="btn btn-primary btn-sm">Create New Request</button>
+                    </div>
+                </div>
+                
+                <div class="table-filters">
+                    <input type="text" class="search-input" placeholder="Search by Request ID, Location, or Description...">
+                    <select class="filter-select">
+                        <option>All Statuses</option>
+                        <option>Open</option>
+                        <option>In Progress</option>
+                        <option>Resolved</option>
+                    </select>
+                    <select class="filter-select">
+                        <option>All Priorities</option>
+                        <option>Critical</option>
+                        <option>High</option>
+                        <option>Medium</option>
+                        <option>Low</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="table-container">
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Req ID</th>
+                                <th>Issue & Description</th>
+                                <th>Location</th>
+                                <th>Priority</th>
+                                <th>Assigned Staff</th>
+                                <th>SLA Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="background: rgba(231, 76, 60, 0.05); border-left: 3px solid #e74c3c;">
+                                <td>
+                                    <div style="font-weight: 600; color: #4a90e2;">#REQ-2095</div>
+                                    <div style="font-size: 11px; color: #718096;">10:42 AM</div>
+                                </td>
+                                <td>
+                                    <div style="font-weight: 600;">HVAC Failure - Server Room</div>
+                                    <div style="font-size: 12px; color: #718096;">Main cooling unit making loud noises, temperature rising</div>
+                                </td>
+                                <td>IT Building, B2</td>
+                                <td><span class="badge danger">Critical</span></td>
+                                <td>
+                                    <button class="btn-secondary btn-sm">Assign Staff</button>
+                                </td>
+                                <td>
+                                    <div style="color: #e74c3c; font-weight: 600; font-size: 12px;">SLA Breached</div>
+                                    <div style="font-size: 11px; color: #718096;">2h 15m overdue</div>
+                                </td>
+                                <td>
+                                    <button class="action-btn">View</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div style="font-weight: 600; color: #4a90e2;">#REQ-2094</div>
+                                    <div style="font-size: 11px; color: #718096;">09:15 AM</div>
+                                </td>
+                                <td>
+                                    <div style="font-weight: 600;">Projector Not Working</div>
+                                    <div style="font-size: 12px; color: #718096;">Classroom projector won't turn on</div>
+                                </td>
+                                <td>Science Block A, Rm 201</td>
+                                <td><span class="badge warning">High</span></td>
+                                <td>John Martinez</td>
+                                <td>
+                                    <div style="color: #2ecc71; font-weight: 600; font-size: 12px;">On Track</div>
+                                    <div style="font-size: 11px; color: #718096;">1h 30m remaining</div>
+                                </td>
+                                <td>
+                                    <button class="action-btn">View</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div style="font-weight: 600; color: #4a90e2;">#REQ-2093</div>
+                                    <div style="font-size: 11px; color: #718096;">Yesterday</div>
+                                </td>
+                                <td>
+                                    <div style="font-weight: 600;">Wi-Fi Connectivity Issues</div>
+                                    <div style="font-size: 12px; color: #718096;">Students reporting intermittent connectivity</div>
+                                </td>
+                                <td>Library, Floor 3</td>
+                                <td><span class="badge info">Medium</span></td>
+                                <td>IT Support Team</td>
+                                <td>
+                                    <div style="color: #2ecc71; font-weight: 600; font-size: 12px;">Resolved</div>
+                                    <div style="font-size: 11px; color: #718096;">45m ahead</div>
+                                </td>
+                                <td>
+                                    <button class="action-btn">View</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div style="font-weight: 600; color: #4a90e2;">#REQ-2092</div>
+                                    <div style="font-size: 11px; color: #718096;">Yesterday</div>
+                                </td>
+                                <td>
+                                    <div style="font-weight: 600;">Leaking Faucet</div>
+                                    <div style="font-size: 12px; color: #718096;">Washroom faucet continuously dripping</div>
+                                </td>
+                                <td>Hostel Block C</td>
+                                <td><span class="badge neutral">Low</span></td>
+                                <td>Plumbing Team</td>
+                                <td>
+                                    <div style="color: #2ecc71; font-weight: 600; font-size: 12px;">Resolved</div>
+                                    <div style="font-size: 11px; color: #718096;">2h 10m ahead</div>
+                                </td>
+                                <td>
+                                    <button class="action-btn">View</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        `;
+    }
+
+    // Hostel Screen
+    function getHostelScreen() {
+        return `
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Hostel Management</div>
+                    <div class="card-actions">
+                        <button class="btn btn-secondary btn-sm">Export</button>
+                        <button class="btn btn-primary btn-sm">Allocate Room</button>
+                    </div>
+                </div>
+                
+                <p style="padding: 20px; color: #718096;">
+                    Hostel management system provides:
+                    <ul style="margin-top: 10px; margin-left: 20px; line-height: 1.8;">
+                        <li>Room allocation and vacancy tracking</li>
+                        <li>Student check-in/check-out management</li>
+                        <li>Mess and facility booking</li>
+                        <li>Visitor management and gate pass</li>
+                        <li>Hostel fee collection</li>
+                        <li>Complaint and request tracking</li>
+                    </ul>
+                </p>
+                
+                <div class="kpi-grid">
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <span class="kpi-label">Total Beds</span>
+                            <div class="kpi-icon blue">🏠</div>
+                        </div>
+                        <div class="kpi-value">918</div>
+                        <div class="kpi-change neutral">Across 4 blocks</div>
+                    </div>
+                    
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <span class="kpi-label">Occupied</span>
+                            <div class="kpi-icon green">✓</div>
+                        </div>
+                        <div class="kpi-value">845</div>
+                        <div class="kpi-change positive">92% occupancy</div>
+                    </div>
+                    
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <span class="kpi-label">Available</span>
+                            <div class="kpi-icon orange">📋</div>
+                        </div>
+                        <div class="kpi-value">73</div>
+                        <div class="kpi-change neutral">Vacant beds</div>
+                    </div>
+                    
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <span class="kpi-label">Maintenance</span>
+                            <div class="kpi-icon red">🔧</div>
+                        </div>
+                        <div class="kpi-value">18</div>
+                        <div class="kpi-change negative">Under repair</div>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+
+    // Facility Screen
+    function getFacilityScreen() {
+        return `
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Facility Booking</div>
+                    <div class="card-actions">
+                        <button class="btn btn-secondary btn-sm">View Calendar</button>
+                        <button class="btn btn-primary btn-sm">New Booking</button>
+                    </div>
+                </div>
+                
+                <p style="padding: 20px; color: #718096;">
+                    Facility booking system allows:
+                    <ul style="margin-top: 10px; margin-left: 20px; line-height: 1.8;">
+                        <li>Book auditoriums, conference rooms, labs</li>
+                        <li>Sports facility scheduling</li>
+                        <li>Equipment and resource reservation</li>
+                        <li>Approval workflow management</li>
+                        <li>Conflict detection and prevention</li>
+                        <li>Usage tracking and reports</li>
+                    </ul>
+                </p>
+                
+                <div class="kpi-grid">
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <span class="kpi-label">Today's Bookings</span>
+                            <div class="kpi-icon blue">📅</div>
+                        </div>
+                        <div class="kpi-value">24</div>
+                        <div class="kpi-change positive">Across all facilities</div>
+                    </div>
+                    
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <span class="kpi-label">Auditorium</span>
+                            <div class="kpi-icon green">🎭</div>
+                        </div>
+                        <div class="kpi-value">85%</div>
+                        <div class="kpi-change positive">Utilization</div>
+                    </div>
+                    
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <span class="kpi-label">Sports Complex</span>
+                            <div class="kpi-icon orange">🏋️</div>
+                        </div>
+                        <div class="kpi-value">72%</div>
+                        <div class="kpi-change positive">Utilization</div>
+                    </div>
+                    
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <span class="kpi-label">Pending Approvals</span>
+                            <div class="kpi-icon red">⏳</div>
+                        </div>
+                        <div class="kpi-value">8</div>
+                        <div class="kpi-change neutral">Awaiting approval</div>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+
+    // Fee Structure Screen
+    function getFeeStructureScreen() {
+        return `
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Fee Structure Management</div>
+                    <div
+                    <div class="card-actions">
+                        <button class="btn btn-secondary btn-sm">Export</button>
+                        <button class="btn btn-primary btn-sm">Add Fee Structure</button>
+                    </div>
+                </div>
+                
+                <p style="padding: 20px; color: #718096;">
+                    Fee structure management includes:
+                    <ul style="margin-top: 10px; margin-left: 20px; line-height: 1.8;">
+                        <li>Define fee components by program and year</li>
+                        <li>Set tuition, hostel, transport, and other fees</li>
+                        <li>Configure payment schedules and installments</li>
+                        <li>Manage late fee penalties</li>
+                        <li>Create scholarship and waiver rules</li>
+                        <li>Academic year-wise fee structures</li>
+                    </ul>
+                </p>
+            </div>
+            
+            <div class="table-container">
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Program</th>
+                                <th>Year</th>
+                                <th>Tuition Fee</th>
+                                <th>Hostel Fee</th>
+                                <th>Other Fees</th>
+                                <th>Total</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>B.Tech CSE</td>
+                                <td>1st Year</td>
+                                <td>₹ 1,50,000</td>
+                                <td>₹ 60,000</td>
+                                <td>₹ 25,000</td>
+                                <td>₹ 2,35,000</td>
+                                <td>
+                                    <div class="action-cell">
+                                        <button class="action-btn">Edit</button>
+                                        <button class="action-btn">View</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>B.Tech CSE</td>
+                                <td>2nd Year</td>
+                                <td>₹ 1,50,000</td>
+                                <td>₹ 60,000</td>
+                                <td>₹ 20,000</td>
+                                <td>₹ 2,30,000</td>
+                                <td>
+                                    <div class="action-cell">
+                                        <button class="action-btn">Edit</button>
+                                        <button class="action-btn">View</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>B.Tech EEE</td>
+                                <td>1st Year</td>
+                                <td>₹ 1,40,000</td>
+                                <td>₹ 60,000</td>
+                                <td>₹ 25,000</td>
+                                <td>₹ 2,25,000</td>
+                                <td>
+                                    <div class="action-cell">
+                                        <button class="action-btn">Edit</button>
+                                        <button class="action-btn">View</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        `;
+    }
+
+    // Fee Ledger Screen
+    function getFeeLedgerScreen() {
+        return `
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Student Fee Ledger</div>
+                    <div class="card-actions">
+                        <button class="btn btn-secondary btn-sm">Export Report</button>
+                        <button class="btn btn-primary btn-sm">Record Payment</button>
+                    </div>
+                </div>
+                
+                <div class="table-filters">
+                    <select class="filter-select">
+                        <option>All Programs</option>
+                        <option>B.Tech CSE</option>
+                        <option>B.Tech EEE</option>
+                    </select>
+                    <select class="filter-select">
+                        <option>All Status</option>
+                        <option>Paid</option>
+                        <option>Pending</option>
+                        <option>Overdue</option>
+                    </select>
+                    <input type="text" class="search-input" placeholder="Search by student name or ID...">
+                </div>
+            </div>
+            
+            <div class="kpi-grid">
+                <div class="kpi-card">
+                    <div class="kpi-header">
+                        <span class="kpi-label">Total Collectible</span>
+                        <div class="kpi-icon blue">💰</div>
+                    </div>
+                    <div class="kpi-value">₹ 3.6 Cr</div>
+                    <div class="kpi-change neutral">Current academic year</div>
+                </div>
+                
+                <div class="kpi-card">
+                    <div class="kpi-header">
+                        <span class="kpi-label">Collected</span>
+                        <div class="kpi-icon green">✓</div>
+                    </div>
+                    <div class="kpi-value">₹ 3.2 Cr</div>
+                    <div class="kpi-change positive">89.5% collection</div>
+                </div>
+                
+                <div class="kpi-card">
+                    <div class="kpi-header">
+                        <span class="kpi-label">Pending</span>
+                        <div class="kpi-icon orange">⏳</div>
+                    </div>
+                    <div class="kpi-value">₹ 38 L</div>
+                    <div class="kpi-change neutral">268 students</div>
+                </div>
+                
+                <div class="kpi-card">
+                    <div class="kpi-header">
+                        <span class="kpi-label">Overdue</span>
+                        <div class="kpi-icon red">⚠️</div>
+                    </div>
+                    <div class="kpi-value">₹ 4.2 L</div>
+                    <div class="kpi-change negative">42 students</div>
+                </div>
+            </div>
+            
+            <div class="table-container">
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Roll No</th>
+                                <th>Student Name</th>
+                                <th>Program</th>
+                                <th>Total Fee</th>
+                                <th>Paid</th>
+                                <th>Balance</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2023-CSE-001</td>
+                                <td>Aditya Sharma</td>
+                                <td>B.Tech CSE</td>
+                                <td>₹ 2,35,000</td>
+                                <td>₹ 2,35,000</td>
+                                <td>₹ 0</td>
+                                <td><span class="badge success">Paid</span></td>
+                                <td>
+                                    <button class="action-btn">View Ledger</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2023-CSE-002</td>
+                                <td>Priya Singh</td>
+                                <td>B.Tech CSE</td>
+                                <td>₹ 2,35,000</td>
+                                <td>₹ 2,35,000</td>
+                                <td>₹ 0</td>
+                                <td><span class="badge success">Paid</span></td>
+                                <td>
+                                    <button class="action-btn">View Ledger</button>
+                                </td>
+                            </tr>
+                            <tr style="background: rgba(230, 126, 34, 0.05);">
+                                <td>2022-EEE-045</td>
+                                <td>Rohan Das</td>
+                                <td>B.Tech EEE</td>
+                                <td>₹ 2,25,000</td>
+                                <td>₹ 1,50,000</td>
+                                <td>₹ 75,000</td>
+                                <td><span class="badge warning">Pending</span></td>
+                                <td>
+                                    <button class="action-btn">View Ledger</button>
+                                </td>
+                            </tr>
+                            <tr style="background: rgba(231, 76, 60, 0.05);">
+                                <td>2021-MECH-089</td>
+                                <td>Vikram Kumar</td>
+                                <td>B.Tech MECH</td>
+                                <td>₹ 2,30,000</td>
+                                <td>₹ 1,30,000</td>
+                                <td>₹ 1,00,000</td>
+                                <td><span class="badge danger">Overdue</span></td>
+                                <td>
+                                    <button class="action-btn">View Ledger</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        `;
+    }
+
+    // Payments Screen
+    function getPaymentsScreen() {
+        return `
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Payments & Waivers</div>
+                    <div class="card-actions">
+                        <button class="btn btn-secondary btn-sm">Export</button>
+                        <button class="btn btn-primary btn-sm">Record Payment</button>
+                    </div>
+                </div>
+                
+                <p style="padding: 20px; color: #718096;">
+                    Payment management includes:
+                    <ul style="margin-top: 10px; margin-left: 20px; line-height: 1.8;">
+                        <li>Record online and offline payments</li>
+                        <li>Payment gateway integration</li>
+                        <li>Receipt generation and printing</li>
+                        <li>Refund processing</li>
+                        <li>Scholarship and waiver management</li>
+                        <li>Payment reminders and notifications</li>
+                    </ul>
+                </p>
+                
+                <div class="table-filters">
+                    <select class="filter-select">
+                        <option>All Payment Modes</option>
+                        <option>Online</option>
+                        <option>Cash</option>
+                        <option>Cheque</option>
+                        <option>DD</option>
+                    </select>
+                    <input type="date" class="filter-select">
+                    <input type="text" class="search-input" placeholder="Search payments...">
+                </div>
+            </div>
+            
+            <div class="table-container">
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Receipt No</th>
+                                <th>Date</th>
+                                <th>Student</th>
+                                <th>Amount</th>
+                                <th>Mode</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>REC-2024-1842</td>
+                                <td>2024-12-08</td>
+                                <td>Aditya Sharma (2023-CSE-001)</td>
+                                <td>₹ 1,17,500</td>
+                                <td><span class="badge info">Online</span></td>
+                                <td><span class="badge success">Verified</span></td>
+                                <td>
+                                    <div class="action-cell">
+                                        <button class="action-btn">Print</button>
+                                        <button class="action-btn">View</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>REC-2024-1841</td>
+                                <td>2024-12-08</td>
+                                <td>Priya Singh (2023-CSE-002)</td>
+                                <td>₹ 2,35,000</td>
+                                <td><span class="badge info">Online</span></td>
+                                <td><span class="badge success">Verified</span></td>
+                                <td>
+                                    <div class="action-cell">
+                                        <button class="action-btn">Print</button>
+                                        <button class="action-btn">View</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>REC-2024-1840</td>
+                                <td>2024-12-07</td>
+                                <td>Rohan Das (2022-EEE-045)</td>
+                                <td>₹ 75,000</td>
+                                <td><span class="badge warning">Cheque</span></td>
+                                <td><span class="badge warning">Pending Clearance</span></td>
+                                <td>
+                                    <div class="action-cell">
+                                        <button class="action-btn">Print</button>
+                                        <button class="action-btn">View</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        `;
+    }
+
+    // Notices Screen
+    function getNoticesScreen() {
+        return `
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Communications & Notices</div>
+                    <div class="card-actions">
+                        <button class="btn btn-secondary btn-sm">View History</button>
+                        <button class="btn btn-primary btn-sm">Create Notice</button>
+                    </div>
+                </div>
+                
+                <div class="table-filters">
+                    <input type="text" class="search-input" placeholder="Search notices by title, ID or author..." style="flex: 1;">
+                    <button class="filter-select" style="display: flex; align-items: center; gap: 8px;">
+                        All Audiences
+                    </button>
+                    <button class="filter-select">
+                        This Month
+                    </button>
+                </div>
+            </div>
+            
+            <div class="table-container">
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Status</th>
+                                <th>Notice Title</th>
+                                <th>Target Audience</th>
+                                <th>Author</th>
+                                <th>Published Date</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="badge success">Published</span></td>
+                                <td>
+                                    <div style="font-weight: 600;">Fall Semester Exam Schedule</div>
+                                    <div style="font-size: 11px; color: #718096;">ID: NOT-2023-892</div>
+                                </td>
+                                <td>Students</td>
+                                <td>Sarah Jenkins</td>
+                                <td>Oct 24, 2023</td>
+                                <td>
+                                    <button class="action-btn">View</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge info">Scheduled</span></td>
+                                <td>
+                                    <div style="font-weight: 600;">Payroll System Maintenance</div>
+                                    <div style="font-size: 11px; color: #718096;">ID: NOT-2023-901</div>
+                                </td>
+                                <td>Faculty, Staff</td>
+                                <td>Mark Doe</td>
+                                <td>Nov 01, 2023</td>
+                                <td>
+                                    <button class="action-btn">Edit</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge neutral">Draft</span></td>
+                                <td>
+                                    <div style="font-weight: 600;">Campus Parking Policy Update</div>
+                                    <div style="font-size: 11px; color: #718096;">ID: NOT-2023-905</div>
+                                </td>
+                                <td>Not set</td>
+                                <td>You</td>
+                                <td>—</td>
+                                <td>
+                                    <div class="action-cell">
+                                        <button class="action-btn">Edit</button>
+                                        <button class="action-btn">Delete</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge success">Published</span></td>
+                                <td>
+                                    <div style="font-weight: 600;">Library Holiday Hours</div>
+                                    <div style="font-size: 11px; color: #718096;">ID: NOT-2023-880</div>
+                                </td>
+                                <td>All</td>
+                                <td>Emily Chen</td>
+                                <td>Oct 15, 2023</td>
+                                <td>
+                                    <button class="action-btn">View</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        `;
+    }
+
+    // Audit Logs Screen
+    function getAuditLogsScreen() {
+        return `
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">System Audit Logs</div>
+                    <div class="card-actions">
+                        <button class="btn btn-secondary btn-sm">Export Logs</button>
+                    </div>
+                </div>
+                
+                <p style="padding: 20px; color: #718096;">
+                    Audit logs track all system activities for security and compliance:
+                    <ul style="margin-top: 10px; margin-left: 20px; line-height: 1.8;">
+                        <li>User login/logout activities</li>
+                        <li>Data modifications and deletions</li>
+                        <li>Permission changes</li>
+                        <li>Financial transactions</li>
+                        <li>System configuration changes</li>
+                        <li>Failed access attempts</li>
+                    </ul>
+                </p>
+                
+                <div class="table-filters">
+                    <select class="filter-select">
+                        <option>All Activities</option>
+                        <option>Login/Logout</option>
+                        <option>Data Modification</option>
+                        <option>Financial</option>
+                        <option>Security</option>
+                    </select>
+                    <select class="filter-select">
+                        <option>All Users</option>
+                        <option>Admin</option>
+                        <option>Faculty</option>
+                        <option>Staff</option>
+                    </select>
+                    <input type="date" class="filter-select">
+                    <input type="text" class="search-input" placeholder="Search logs...">
+                </div>
+            </div>
+            
+            <div class="table-container">
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Timestamp</th>
+                                <th>User</th>
+                                <th>Action</th>
+                                <th>Module</th>
+                                <th>IP Address</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2024-12-08 14:45:23</td>
+                                <td>admin@college.edu</td>
+                                <td>Login Successful</td>
+                                <td>Authentication</td>
+                                <td>192.168.1.105</td>
+                                <td><span class="badge success">Success</span></td>
+                            </tr>
+                            <tr>
+                                <td>2024-12-08 14:23:15</td>
+                                <td>sarah.j@college.edu</td>
+                                <td>Updated Course Syllabus</td>
+                                <td>Academics</td>
+                                <td>192.168.1.142</td>
+                                <td><span class="badge success">Success</span></td>
+                            </tr>
+                            <tr>
+                                <td>2024-12-08 14:15:08</td>
+                                <td>admin@college.edu</td>
+                                <td>Published Exam Schedule</td>
+                                <td>Academics</td>
+                                <td>192.168.1.105</td>
+                                <td><span class="badge success">Success</span></td>
+                            </tr>
+                            <tr style="background: rgba(231, 76, 60, 0.05);">
+                                <td>2024-12-08 13:58:42</td>
+                                <td>unknown@external.com</td>
+                                <td>Failed Login Attempt</td>
+                                <td>Authentication</td>
+                                <td>203.45.128.92</td>
+                                <td><span class="badge danger">Failed</span></td>
+                            </tr>
+                            <tr>
+                                <td>2024-12-08 13:45:10</td>
+                                <td>finance@college.edu</td>
+                                <td>Processed Payment</td>
+                                <td>Finance</td>
+                                <td>192.168.1.180</td>
+                                <td><span class="badge success">Success</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        `;
+    }
+
+    // System Health Screen
+    function getSystemHealthScreen() {
+        return `
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">System Health Monitor</div>
+                    <div class="card-actions">
+                        <button class="btn btn-secondary btn-sm">Refresh</button>
+                        <button class="btn btn-primary btn-sm">Run Diagnostics</button>
+                    </div>
+                </div>
+                
+                <div class="kpi-grid">
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <span class="kpi-label">System Uptime</span>
+                            <div class="kpi-icon green">✓</div>
+                        </div>
+                        <div class="kpi-value">99.8%</div>
+                        <div class="kpi-change positive">45 days, 12 hours</div>
+                    </div>
+                    
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <span class="kpi-label">CPU Usage</span>
+                            <div class="kpi-icon blue">💻</div>
+                        </div>
+                        <div class="kpi-value">42%</div>
+                        <div class="kpi-change positive">Normal load</div>
+                    </div>
+                    
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <span class="kpi-label">Memory Usage</span>
+                            <div class="kpi-icon orange">🧠</div>
+                        </div>
+                        <div class="kpi-value">68%</div>
+                        <div class="kpi-change neutral">12.8 GB / 19 GB</div>
+                    </div>
+                    
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <span class="kpi-label">Disk Space</span>
+                            <div class="kpi-icon green">💾</div>
+                        </div>
+                        <div class="kpi-value">54%</div>
+                        <div class="kpi-change positive">542 GB / 1 TB</div>
+                    </div>
+                    
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <span class="kpi-label">Database</span>
+                            <div class="kpi-icon green">🗄️</div>
+                        </div>
+                        <div class="kpi-value">Healthy</div>
+                        <div class="kpi-change positive">All connections stable</div>
+                    </div>
+                    
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <span class="kpi-label">API Response</span>
+                            <div class="kpi-icon blue">⚡</div>
+                        </div>
+                        <div class="kpi-value">142 ms</div>
+                        <div class="kpi-change positive">Avg response time</div>
+                    </div>
+                    
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <span class="kpi-label">Active Users</span>
+                            <div class="kpi-icon purple">👥</div>
+                        </div>
+                        <div class="kpi-value">284</div>
+                        <div class="kpi-change positive">Currently online</div>
+                    </div>
+                    
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <span class="kpi-label">Last Backup</span>
+                            <div class="kpi-icon green">💾</div>
+                        </div>
+                        <div class="kpi-value">2 hrs ago</div>
+                        <div class="kpi-change positive">Successful</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h3 style="font-size: 16px; font-weight: 700; margin-bottom: 16px;">Service Status</h3>
+                <div style="display: flex; flex-direction: column; gap: 12px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px; background: #f7fafc; border-radius: 6px;">
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                            <div style="width: 10px; height: 10px; border-radius: 50%; background: #2ecc71;"></div>
+                            <div>
+                                <div style="font-weight: 600;">Web Application</div>
+                                <div style="font-size: 12px; color: #718096;">Main ERP Interface</div>
+                            </div>
+                        </div>
+                        <span class="badge success">Running</span>
+                    </div>
+                    
+                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px; background: #f7fafc; border-radius: 6px;">
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                            <div style="width: 10px; height: 10px; border-radius: 50%; background: #2ecc71;"></div>
+                            <div>
+                                <div style="font-weight: 600;">Database Server</div>
+                                <div style="font-size: 12px; color: #718096;">MySQL 8.0</div>
+                            </div>
+                        </div>
+                        <span class="badge success">Running</span>
+                    </div>
+                    
+                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px; background: #f7fafc; border-radius: 6px;">
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                            <div style="width: 10px; height: 10px; border-radius: 50%; background: #2ecc71;"></div>
+                            <div>
+                                <div style="font-weight: 600;">Email Service</div>
+                                <div style="font-size: 12px; color: #718096;">SMTP Gateway</div>
+                            </div>
+                        </div>
+                        <span class="badge success">Running</span>
+                    </div>
+                    
+                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px; background: #f7fafc; border-radius: 6px;">
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                            <div style="width: 10px; height: 10px; border-radius: 50%; background: #2ecc71;"></div>
+                            <div>
+                                <div style="font-weight: 600;">Payment Gateway</div>
+                                <div style="font-size: 12px; color: #718096;">Online Payments</div>
+                            </div>
+                        </div>
+                        <span class="badge success">Running</span>
+                    </div>
+                    
+                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px; background: #fff3cd; border-radius: 6px;">
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                            <div style="width: 10px; height: 10px; border-radius: 50%; background: #e67e22;"></div>
+                            <div>
+                                <div style="font-weight: 600;">SMS Service</div>
+                                <div style="font-size: 12px; color: #718096;">Notifications</div>
+                            </div>
+                        </div>
+                        <span class="badge warning">Degraded</span>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+
+    // Configurations Screen
+    function getConfigurationsScreen() {
+        return `
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">System Configurations</div>
+                    <div class="card-actions">
+                        <button class="btn btn-secondary btn-sm">Reset Defaults</button>
+                        <button class="btn btn-primary btn-sm">Save Changes</button>
+                    </div>
+                </div>
+                
+                <p style="padding: 20px; color: #718096;">
+                    Configure global system settings and parameters:
+                    <ul style="margin-top: 10px; margin-left: 20px; line-height: 1.8;">
+                        <li>Institution details and branding</li>
+                        <li>Academic calendar settings</li>
+                        <li>User roles and permissions</li>
+                        <li>Email and notification templates</li>
+                        <li>Payment gateway configuration</li>
+                        <li>Backup and security settings</li>
+                    </ul>
+                </p>
+            </div>
+            
+            <div class="card">
+                <h3 style="font-size: 16px; font-weight: 700; margin-bottom: 16px;">Institution Details</h3>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+                    <div>
+                        <label style="display: block; font-size: 13px; font-weight: 500; margin-bottom: 8px;">Institution Name</label>
+                        <input type="text" class="search-input" style="width: 100%;" value="College Name">
+                    </div>
+                    <div>
+                        <label style="display: block; font-size: 13px; font-weight: 500; margin-bottom: 8px;">Institution Code</label>
+                        <input type="text" class="search-input" style="width: 100%;" value="INST-2024-001">
+                    </div>
+                    <div>
+                        <label style="display: block; font-size: 13px; font-weight: 500; margin-bottom: 8px;">Email</label>
+                        <input type="email" class="search-input" style="width: 100%;" value="admin@college.edu">
+                    </div>
+                    <div>
+                        <label style="display: block; font-size: 13px; font-weight: 500; margin-bottom: 8px;">Phone</label>
+                        <input type="tel" class="search-input" style="width: 100%;" value="+91 123 456 7890">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h3 style="font-size: 16px; font-weight: 700; margin-bottom: 16px;">Academic Settings</h3>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+                    <div>
+                        <label style="display: block; font-size: 13px; font-weight: 500; margin-bottom: 8px;">Current Academic Year</label>
+                        <select class="filter-select" style="width: 100%;">
+                            <option>2024 - 2025</option>
+                            <option>2023 - 2024</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label style="display: block; font-size: 13px; font-weight: 500; margin-bottom: 8px;">Current Term</label>
+                        <select class="filter-select" style="width: 100%;">
+                            <option>Fall Semester</option>
+                            <option>Spring Semester</option>
+                            <option>Summer Term</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label style="display: block; font-size: 13px; font-weight: 500; margin-bottom: 8px;">Minimum Attendance %</label>
+                        <input type="number" class="search-input" style="width: 100%;" value="75">
+                    </div>
+                    <div>
+                        <label style="display: block; font-size: 13px; font-weight: 500; margin-bottom: 8px;">Passing Grade</label>
+                        <input type="text" class="search-input" style="width: 100%;" value="40%">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h3 style="font-size: 16px; font-weight: 700; margin-bottom: 16px;">System Preferences</h3>
+                <div style="display: flex; flex-direction: column; gap: 16px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <div style="font-weight: 600; margin-bottom: 4px;">Email Notifications</div>
+                            <div style="font-size: 12px; color: #718096;">Send automated email notifications to users</div>
+                        </div>
+                        <label style="position: relative; display: inline-block; width: 44px; height: 24px;">
+                            <input type="checkbox" checked style="opacity: 0; width: 0; height: 0;">
+                            <span style="position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background: #4a90e2; transition: .4s; border-radius: 24px;"></span>
+                        </label>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <div style="font-weight: 600; margin-bottom: 4px;">SMS Notifications</div>
+                            <div style="font-size: 12px; color: #718096;">Send SMS for critical updates</div>
+                        </div>
+                        <label style="position: relative; display: inline-block; width: 44px; height: 24px;">
+                            <input type="checkbox" checked style="opacity: 0; width: 0; height: 0;">
+                            <span style="position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background: #4a90e2; transition: .4s; border-radius: 24px;"></span>
+                        </label>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <div style="font-weight: 600; margin-bottom: 4px;">Two-Factor Authentication</div>
+                            <div style="font-size: 12px; color: #718096;">Require 2FA for admin accounts</div>
+                        </div>
+                        <label style="position: relative; display: inline-block; width: 44px; height: 24px;">
+                            <input type="checkbox" style="opacity: 0; width: 0; height: 0;">
+                            <span style="position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background: #cbd5e0; transition: .4s; border-radius: 24px;"></span>
+                        </label>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <div style="font-weight: 600; margin-bottom: 4px;">Auto Backup</div>
+                            <div style="font-size: 12px; color: #718096;">Automatic daily database backup at 2:00 AM</div>
+                        </div>
+                        <label style="position: relative; display: inline-block; width: 44px; height: 24px;">
+                            <input type="checkbox" checked style="opacity: 0; width: 0; height: 0;">
+                            <span style="position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background: #4a90e2; transition: .4s; border-radius: 24px;"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
 </script>
 
 </body>
