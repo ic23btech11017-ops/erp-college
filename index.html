@@ -789,6 +789,19 @@
             font-size: 18px;
         }
         
+        .kpi-icon svg,
+        .nav-item-icon svg,
+        .role-card-icon svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+        
+        .role-card-icon svg {
+            width: 48px;
+            height: 48px;
+        }
+        
         .kpi-icon.blue { background: rgba(74, 144, 226, 0.15); color: #4a90e2; }
         .kpi-icon.green { background: rgba(46, 204, 113, 0.15); color: #2ecc71; }
         .kpi-icon.red { background: rgba(231, 76, 60, 0.15); color: #e74c3c; }
@@ -1475,6 +1488,28 @@
             to { opacity: 1; }
         }
         
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(100%);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes slideOutRight {
+            from {
+                opacity: 1;
+                transform: translateX(0);
+            }
+            to {
+                opacity: 0;
+                transform: translateX(100%);
+            }
+        }
+        
         .animate-slide-in {
             animation: slideIn 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
@@ -1495,27 +1530,27 @@
         </div>
         <div class="role-grid">
             <div class="role-card" onclick="selectRole('student')">
-                <div class="role-card-icon">🎓</div>
+                <div class="role-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3L1 9l11 6 11-6-11-6z"/><path d="M5 13l7 4 7-4M5 13v6l7 4 7-4v-6"/></svg></div>
                 <h3>Student</h3>
                 <p>Access academic records, attendance, fee payments, and course registration</p>
             </div>
             <div class="role-card" onclick="selectRole('faculty')">
-                <div class="role-card-icon">👨‍🏫</div>
+                <div class="role-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="7" r="4"/><path d="M5.5 21v-2a7.5 7.5 0 0 1 15 0v2"/><path d="M12 14v-3"/></svg></div>
                 <h3>Faculty</h3>
                 <p>Manage courses, attendance marking, grade submission, and student records</p>
             </div>
             <div class="role-card" onclick="selectRole('admin')">
-                <div class="role-card-icon">⚙️</div>
+                <div class="role-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6M5.64 5.64l4.24 4.24m4.24 4.24l4.24 4.24M1 12h6m6 0h6M5.64 18.36l4.24-4.24m4.24-4.24l4.24-4.24"/></svg></div>
                 <h3>Admin</h3>
                 <p>Full system access for user management, configuration, and institutional control</p>
             </div>
             <div class="role-card" onclick="selectRole('operations')">
-                <div class="role-card-icon">🔧</div>
+                <div class="role-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
                 <h3>Operations / CMD</h3>
                 <p>Asset management, maintenance tracking, facility booking, and operational oversight</p>
             </div>
             <div class="role-card" onclick="selectRole('management')">
-                <div class="role-card-icon">📊</div>
+                <div class="role-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
                 <h3>Management</h3>
                 <p>Executive dashboards, financial overview, strategic reports, and institutional analytics</p>
             </div>
@@ -1573,15 +1608,15 @@
             <div class="nav-section">
                 <div class="nav-section-title">Core</div>
                 <div class="nav-item active" data-screen="overview">
-                    <span class="nav-item-icon">📊</span>
+                    <span class="nav-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span>
                     <span>Overview Dashboard</span>
                 </div>
                 <div class="nav-item" data-screen="users">
-                    <span class="nav-item-icon">👥</span>
+                    <span class="nav-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
                     <span>Users</span>
                 </div>
                 <div class="nav-item" data-screen="departments">
-                    <span class="nav-item-icon">🏢</span>
+                    <span class="nav-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><path d="M9 22v-4h6v4M8 6h.01M16 6h.01M12 6h.01M12 10h.01M12 14h.01M16 10h.01M8 10h.01M8 14h.01M16 14h.01"/></svg></span>
                     <span>Departments</span>
                 </div>
             </div>
@@ -1589,23 +1624,23 @@
             <div class="nav-section">
                 <div class="nav-section-title">Academics</div>
                 <div class="nav-item" data-screen="students">
-                    <span class="nav-item-icon">🎓</span>
+                    <span class="nav-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3L1 9l11 6 11-6-11-6z"/><path d="M5 13l7 4 7-4M5 13v6l7 4 7-4v-6"/></svg></span>
                     <span>Student Master</span>
                 </div>
                 <div class="nav-item" data-screen="courses">
-                    <span class="nav-item-icon">📚</span>
+                    <span class="nav-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
                     <span>Course & Curriculum</span>
                 </div>
                 <div class="nav-item" data-screen="registration">
-                    <span class="nav-item-icon">📝</span>
+                    <span class="nav-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg></span>
                     <span>Registration Control</span>
                 </div>
                 <div class="nav-item" data-screen="attendance">
-                    <span class="nav-item-icon">📅</span>
+                    <span class="nav-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span>
                     <span>Attendance Overview</span>
                 </div>
                 <div class="nav-item" data-screen="exams">
-                    <span class="nav-item-icon">📄</span>
+                    <span class="nav-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span>
                     <span>Exams & Results</span>
                 </div>
             </div>
@@ -1613,19 +1648,19 @@
             <div class="nav-section">
                 <div class="nav-section-title">Operations</div>
                 <div class="nav-item" data-screen="assets">
-                    <span class="nav-item-icon">💼</span>
+                    <span class="nav-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2-2v16"/></svg></span>
                     <span>Asset Master</span>
                 </div>
                 <div class="nav-item" data-screen="tickets">
-                    <span class="nav-item-icon">🔧</span>
+                    <span class="nav-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></span>
                     <span>Maintenance Tickets</span>
                 </div>
                 <div class="nav-item" data-screen="hostel">
-                    <span class="nav-item-icon">🏠</span>
+                    <span class="nav-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
                     <span>Hostel Management</span>
                 </div>
                 <div class="nav-item" data-screen="facility">
-                    <span class="nav-item-icon">🏋️</span>
+                    <span class="nav-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span>
                     <span>Facility / Booking</span>
                 </div>
             </div>
@@ -1633,15 +1668,15 @@
             <div class="nav-section">
                 <div class="nav-section-title">Finance</div>
                 <div class="nav-item" data-screen="feeStructure">
-                    <span class="nav-item-icon">💰</span>
+                    <span class="nav-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span>
                     <span>Fee Structure</span>
                 </div>
                 <div class="nav-item" data-screen="feeLedger">
-                    <span class="nav-item-icon">📊</span>
+                    <span class="nav-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span>
                     <span>Student Fee Ledger</span>
                 </div>
                 <div class="nav-item" data-screen="payments">
-                    <span class="nav-item-icon">💳</span>
+                    <span class="nav-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></span>
                     <span>Payments & Waivers</span>
                 </div>
             </div>
@@ -1649,7 +1684,7 @@
             <div class="nav-section">
                 <div class="nav-section-title">Communication</div>
                 <div class="nav-item" data-screen="notices">
-                    <span class="nav-item-icon">📢</span>
+                    <span class="nav-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
                     <span>Notices & Announcements</span>
                 </div>
             </div>
@@ -1657,15 +1692,15 @@
             <div class="nav-section">
                 <div class="nav-section-title">System</div>
                 <div class="nav-item" data-screen="auditLogs">
-                    <span class="nav-item-icon">📋</span>
+                    <span class="nav-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg></span>
                     <span>Audit Logs</span>
                 </div>
                 <div class="nav-item" data-screen="systemHealth">
-                    <span class="nav-item-icon">❤️</span>
+                    <span class="nav-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></span>
                     <span>System Health</span>
                 </div>
                 <div class="nav-item" data-screen="configurations">
-                    <span class="nav-item-icon">⚙️</span>
+                    <span class="nav-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6M5.64 5.64l4.24 4.24m4.24 4.24l4.24 4.24M1 12h6m6 0h6M5.64 18.36l4.24-4.24m4.24-4.24l4.24-4.24"/></svg></span>
                     <span>Configurations</span>
                 </div>
             </div>
@@ -1679,7 +1714,7 @@
             <div class="topbar-title" id="pageTitle">Overview Dashboard</div>
             <div class="topbar-actions">
                 <div class="theme-toggle" onclick="toggleTheme()">
-                    <span id="themeIcon">🌙</span>
+                    <span id="themeIcon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span>
                 </div>
                 <div class="topbar-icon has-badge">
                     🔔
@@ -1706,6 +1741,39 @@
     let currentScreen = 'overview';
     let selectedRole = '';
     let currentUser = null;
+
+    // Notification System
+    function showNotification(message, type = 'success') {
+        const notification = document.createElement('div');
+        notification.style.cssText = `
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: ${type === 'success' ? '#27ae60' : type === 'error' ? '#e74c3c' : '#4a90e2'};
+            color: white;
+            padding: 16px 24px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            z-index: 10000;
+            font-weight: 600;
+            animation: slideInRight 0.3s ease;
+        `;
+        notification.textContent = message;
+        document.body.appendChild(notification);
+        
+        setTimeout(() => {
+            notification.style.animation = 'slideOutRight 0.3s ease';
+            setTimeout(() => notification.remove(), 300);
+        }, 3000);
+    }
+    
+    // Export Functions
+    function exportData(type) {
+        showNotification(`Exporting ${type}... Download will start shortly.`, 'info');
+        setTimeout(() => {
+            showNotification(`${type} exported successfully!`, 'success');
+        }, 1500);
+    }
 
     // Initialize app
     function initApp() {
@@ -1892,7 +1960,7 @@
                 <div class="kpi-card" onclick="navigateToScreen('students')">
                     <div class="kpi-header">
                         <span class="kpi-label">Total Students</span>
-                        <div class="kpi-icon blue">🎓</div>
+                        <div class="kpi-icon blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3L1 9l11 6 11-6-11-6z"/><path d="M5 13l7 4 7-4M5 13v6l7 4 7-4v-6"/></svg></div>
                     </div>
                     <div class="kpi-value">2,547</div>
                     <div class="kpi-change positive">↑ 12.5% from last year</div>
@@ -1901,7 +1969,7 @@
                 <div class="kpi-card" onclick="navigateToScreen('users')">
                     <div class="kpi-header">
                         <span class="kpi-label">Faculty Members</span>
-                        <div class="kpi-icon green">👨‍🏫</div>
+                        <div class="kpi-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="7" r="4"/><path d="M5.5 21v-2a7.5 7.5 0 0 1 15 0v2"/></svg></div>
                     </div>
                     <div class="kpi-value">187</div>
                     <div class="kpi-change positive">↑ 5 new this month</div>
@@ -1910,7 +1978,7 @@
                 <div class="kpi-card" onclick="navigateToScreen('tickets')">
                     <div class="kpi-header">
                         <span class="kpi-label">Open Tickets</span>
-                        <div class="kpi-icon red">🔧</div>
+                        <div class="kpi-icon red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
                     </div>
                     <div class="kpi-value">42</div>
                     <div class="kpi-change negative">↑ 8 pending</div>
@@ -1919,7 +1987,7 @@
                 <div class="kpi-card" onclick="navigateToScreen('feeLedger')">
                     <div class="kpi-header">
                         <span class="kpi-label">Fee Collection</span>
-                        <div class="kpi-icon orange">💰</div>
+                        <div class="kpi-icon orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
                     </div>
                     <div class="kpi-value">₹ 3.2 Cr</div>
                     <div class="kpi-change positive">↑ 89.5% collected</div>
@@ -1928,7 +1996,7 @@
                 <div class="kpi-card" onclick="navigateToScreen('attendance')">
                     <div class="kpi-header">
                         <span class="kpi-label">Avg Attendance</span>
-                        <div class="kpi-icon blue">📅</div>
+                        <div class="kpi-icon blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
                     </div>
                     <div class="kpi-value">87.3%</div>
                     <div class="kpi-change positive">↑ 2.1% this week</div>
@@ -1937,7 +2005,7 @@
                 <div class="kpi-card" onclick="navigateToScreen('assets')">
                     <div class="kpi-header">
                         <span class="kpi-label">Total Assets</span>
-                        <div class="kpi-icon purple">💼</div>
+                        <div class="kpi-icon purple"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
                     </div>
                     <div class="kpi-value">1,842</div>
                     <div class="kpi-change neutral">12 under maintenance</div>
@@ -1946,7 +2014,7 @@
                 <div class="kpi-card" onclick="navigateToScreen('hostel')">
                     <div class="kpi-header">
                         <span class="kpi-label">Hostel Occupancy</span>
-                        <div class="kpi-icon green">🏠</div>
+                        <div class="kpi-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
                     </div>
                     <div class="kpi-value">92%</div>
                     <div class="kpi-change positive">845 / 918 beds</div>
@@ -1955,7 +2023,7 @@
                 <div class="kpi-card" onclick="navigateToScreen('exams')">
                     <div class="kpi-header">
                         <span class="kpi-label">Upcoming Exams</span>
-                        <div class="kpi-icon orange">📄</div>
+                        <div class="kpi-icon orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
                     </div>
                     <div class="kpi-value">24</div>
                     <div class="kpi-change neutral">Next: Dec 15, 2024</div>
@@ -2116,7 +2184,7 @@
                 <div class="card-header">
                     <div class="card-title">User Management</div>
                     <div class="card-actions">
-                        <button class="btn btn-secondary btn-sm">Export</button>
+                        <button class="btn btn-secondary btn-sm" onclick="exportData('User List')">Export</button>
                         <button class="btn btn-primary btn-sm" onclick="addUser()">Add User</button>
                     </div>
                 </div>
@@ -2248,7 +2316,7 @@
                 <div class="card-header">
                     <div class="card-title">Department Management</div>
                     <div class="card-actions">
-                        <button class="btn btn-secondary btn-sm">Export</button>
+                        <button class="btn btn-secondary btn-sm" onclick="exportData('Department List')">Export</button>
                         <button class="btn btn-primary btn-sm" onclick="addDepartment()">Add Department</button>
                     </div>
                 </div>
@@ -2362,7 +2430,7 @@
                 <div class="card-header">
                     <div class="card-title">Student Master</div>
                     <div class="card-actions">
-                        <button class="btn btn-secondary btn-sm">Export</button>
+                        <button class="btn btn-secondary btn-sm" onclick="exportData('Student List')">Export</button>
                         <button class="btn btn-primary btn-sm" onclick="addStudent()">Add Student</button>
                     </div>
                 </div>
@@ -2495,7 +2563,7 @@
                 <div class="card-header">
                     <div class="card-title">Course & Curriculum Management</div>
                     <div class="card-actions">
-                        <button class="btn btn-secondary btn-sm">Export Catalog</button>
+                        <button class="btn btn-secondary btn-sm" onclick="exportData('Course Catalog')">Export Catalog</button>
                         <button class="btn btn-primary btn-sm" onclick="addCourse()">Add Course</button>
                     </div>
                 </div>
@@ -2628,8 +2696,8 @@
                 <div class="card-header">
                     <div class="card-title">Course Registration Control</div>
                     <div class="card-actions">
-                        <button class="btn btn-secondary btn-sm">Save Draft</button>
-                        <button class="btn btn-primary btn-sm">Publish Window</button>
+                        <button class="btn btn-secondary btn-sm" onclick="showNotification('Registration draft saved', 'success')">Save Draft</button>
+                        <button class="btn btn-primary btn-sm" onclick="showNotification('Registration window published successfully!', 'success')">Publish Window</button>
                     </div>
                 </div>
                 
@@ -2728,7 +2796,7 @@
                 <div class="card-header">
                     <div class="card-title">Attendance Overview</div>
                     <div class="card-actions">
-                        <button class="btn btn-secondary btn-sm">Export Report</button>
+                        <button class="btn btn-secondary btn-sm" onclick="exportData('Attendance Report')">Export Report</button>
                         <button class="btn btn-primary btn-sm" onclick="markAttendance()">Mark Attendance</button>
                     </div>
                 </div>
@@ -2749,7 +2817,7 @@
                     <div class="kpi-card">
                         <div class="kpi-header">
                             <span class="kpi-label">Today's Attendance</span>
-                            <div class="kpi-icon green">✓</div>
+                            <div class="kpi-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></div>
                         </div>
                         <div class="kpi-value">89.2%</div>
                         <div class="kpi-change positive">2,272 / 2,547 students</div>
@@ -2758,7 +2826,7 @@
                     <div class="kpi-card">
                         <div class="kpi-header">
                             <span class="kpi-label">Weekly Average</span>
-                            <div class="kpi-icon blue">📅</div>
+                            <div class="kpi-icon blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
                         </div>
                         <div class="kpi-value">87.8%</div>
                         <div class="kpi-change positive">↑ 1.5% from last week</div>
@@ -2767,7 +2835,7 @@
                     <div class="kpi-card">
                         <div class="kpi-header">
                             <span class="kpi-label">Low Attendance Alerts</span>
-                            <div class="kpi-icon red">⚠️</div>
+                            <div class="kpi-icon red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
                         </div>
                         <div class="kpi-value">142</div>
                         <div class="kpi-change negative">Students below 75%</div>
@@ -2776,7 +2844,7 @@
                     <div class="kpi-card">
                         <div class="kpi-header">
                             <span class="kpi-label">Leave Requests</span>
-                            <div class="kpi-icon orange">📋</div>
+                            <div class="kpi-icon orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg></div>
                         </div>
                         <div class="kpi-value">28</div>
                         <div class="kpi-change neutral">Pending approval</div>
@@ -2793,8 +2861,8 @@
                 <div class="card-header">
                     <div class="card-title">Exam Schedule Management</div>
                     <div class="card-actions">
-                        <button class="btn btn-secondary btn-sm">Audit Log</button>
-                        <button class="btn btn-primary btn-sm">Publish Schedule</button>
+                        <button class="btn btn-secondary btn-sm" onclick="showNotification('Opening audit log...', 'info')">Audit Log</button>
+                        <button class="btn btn-primary btn-sm" onclick="showNotification('Exam schedule published successfully!', 'success')">Publish Schedule</button>
                     </div>
                 </div>
                 
@@ -2814,7 +2882,7 @@
                     <div class="kpi-card">
                         <div class="kpi-header">
                             <span class="kpi-label">Total Exams</span>
-                            <div class="kpi-icon blue">📄</div>
+                            <div class="kpi-icon blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
                         </div>
                         <div class="kpi-value">42</div>
                         <div class="kpi-change neutral">Fall 2024 Term</div>
@@ -2823,7 +2891,7 @@
                     <div class="kpi-card">
                         <div class="kpi-header">
                             <span class="kpi-label">Scheduled</span>
-                            <div class="kpi-icon green">✓</div>
+                            <div class="kpi-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></div>
                         </div>
                         <div class="kpi-value">38</div>
                         <div class="kpi-change positive">90.5% complete</div>
@@ -2832,7 +2900,7 @@
                     <div class="kpi-card">
                         <div class="kpi-header">
                             <span class="kpi-label">Conflicts</span>
-                            <div class="kpi-icon red">⚠️</div>
+                            <div class="kpi-icon red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
                         </div>
                         <div class="kpi-value">2</div>
                         <div class="kpi-change negative">Needs resolution</div>
@@ -2841,7 +2909,7 @@
                     <div class="kpi-card">
                         <div class="kpi-header">
                             <span class="kpi-label">Venues Used</span>
-                            <div class="kpi-icon orange">🏛️</div>
+                            <div class="kpi-icon orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><path d="M9 22v-4h6v4M8 6h.01M16 6h.01M12 6h.01M12 10h.01M12 14h.01M16 10h.01M8 10h.01M8 14h.01M16 14h.01"/></svg></div>
                         </div>
                         <div class="kpi-value">12</div>
                         <div class="kpi-change neutral">Halls & Labs</div>
@@ -2943,7 +3011,7 @@
                 <div class="card-header">
                     <div class="card-title">Asset Management</div>
                     <div class="card-actions">
-                        <button class="btn btn-secondary btn-sm">Export Report</button>
+                        <button class="btn btn-secondary btn-sm" onclick="exportData('Asset Report')">Export Report</button>
                         <button class="btn btn-primary btn-sm" onclick="addAsset()">Add Asset</button>
                     </div>
                 </div>
@@ -2982,7 +3050,7 @@
                         <tbody>
                             <tr onclick="viewAssetDetails('AST-2023-001')" style="cursor: pointer;">
                                 <td>AST-2023-001</td>
-                                <td>📹 Projector</td>
+                                <td>Projector</td>
                                 <td>Science Block A, Rm 101</td>
                                 <td>
                                     <div style="display: flex; align-items: center; gap: 6px;">
@@ -3001,7 +3069,7 @@
                             </tr>
                             <tr onclick="viewAssetDetails('AST-2023-042')" style="cursor: pointer;">
                                 <td>AST-2023-042</td>
-                                <td>💻 Computer</td>
+                                <td>Computer</td>
                                 <td>Lab 3</td>
                                 <td>
                                     <div style="display: flex; align-items: center; gap: 6px;">
@@ -3089,7 +3157,7 @@
                 <div class="kpi-card">
                     <div class="kpi-header">
                         <span class="kpi-label">Total Open Requests</span>
-                        <div class="kpi-icon blue">📂</div>
+                        <div class="kpi-icon blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg></div>
                     </div>
                     <div class="kpi-value">42</div>
                     <div class="kpi-change positive">↑ 12% this week</div>
@@ -3098,7 +3166,7 @@
                 <div class="kpi-card">
                     <div class="kpi-header">
                         <span class="kpi-label">SLA Breaches</span>
-                        <div class="kpi-icon red">⚠️</div>
+                        <div class="kpi-icon red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
                     </div>
                     <div class="kpi-value">5</div>
                     <div class="kpi-change negative">+2 Today</div>
@@ -3107,7 +3175,7 @@
                 <div class="kpi-card">
                     <div class="kpi-header">
                         <span class="kpi-label">Unassigned Tickets</span>
-                        <div class="kpi-icon orange">📋</div>
+                        <div class="kpi-icon orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg></div>
                     </div>
                     <div class="kpi-value">12</div>
                     <div class="kpi-change neutral">Needs Action</div>
@@ -3116,7 +3184,7 @@
                 <div class="kpi-card">
                     <div class="kpi-header">
                         <span class="kpi-label">Avg Resolution Time</span>
-                        <div class="kpi-icon green">⏱️</div>
+                        <div class="kpi-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="13" r="7"/><polyline points="12 9 12 13 15 15"/><path d="M16.51 17.35l-.35 3.83a2 2 0 0 1-2 1.82H9.83a2 2 0 0 1-2-1.82l-.35-3.83m.01-10.7l.35-3.83A2 2 0 0 1 9.83 1h4.35a2 2 0 0 1 2 1.82l.35 3.83"/></svg></div>
                     </div>
                     <div class="kpi-value">4.2 hrs</div>
                     <div class="kpi-change positive">↓ 15% improvement</div>
@@ -3127,7 +3195,7 @@
                 <div class="card-header">
                     <div class="card-title">Maintenance Requests</div>
                     <div class="card-actions">
-                        <button class="btn btn-secondary btn-sm">Export Report</button>
+                        <button class="btn btn-secondary btn-sm" onclick="exportData('Maintenance Report')">Export Report</button>
                         <button class="btn btn-primary btn-sm" onclick="createTicket()">Create New Request</button>
                     </div>
                 </div>
@@ -3177,7 +3245,7 @@
                                 <td>IT Building, B2</td>
                                 <td><span class="badge danger">Critical</span></td>
                                 <td onclick="event.stopPropagation();">
-                                    <button class="btn-secondary btn-sm">Assign Staff</button>
+                                    <button class="btn-secondary btn-sm" onclick="showNotification('Staff assignment dialog opening...', 'info')">Assign Staff</button>
                                 </td>
                                 <td>
                                     <div style="color: #e74c3c; font-weight: 600; font-size: 12px;">SLA Breached</div>
@@ -3261,7 +3329,7 @@
                 <div class="card-header">
                     <div class="card-title">Hostel Management</div>
                     <div class="card-actions">
-                        <button class="btn btn-secondary btn-sm">Export</button>
+                        <button class="btn btn-secondary btn-sm" onclick="exportData('Hostel Data')">Export</button>
                         <button class="btn btn-primary btn-sm" onclick="allocateRoom()">Allocate Room</button>
                     </div>
                 </div>
@@ -3282,7 +3350,7 @@
                     <div class="kpi-card">
                         <div class="kpi-header">
                             <span class="kpi-label">Total Beds</span>
-                            <div class="kpi-icon blue">🏠</div>
+                            <div class="kpi-icon blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
                         </div>
                         <div class="kpi-value">918</div>
                         <div class="kpi-change neutral">Across 4 blocks</div>
@@ -3291,7 +3359,7 @@
                     <div class="kpi-card">
                         <div class="kpi-header">
                             <span class="kpi-label">Occupied</span>
-                            <div class="kpi-icon green">✓</div>
+                            <div class="kpi-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></div>
                         </div>
                         <div class="kpi-value">845</div>
                         <div class="kpi-change positive">92% occupancy</div>
@@ -3300,7 +3368,7 @@
                     <div class="kpi-card">
                         <div class="kpi-header">
                             <span class="kpi-label">Available</span>
-                            <div class="kpi-icon orange">📋</div>
+                            <div class="kpi-icon orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg></div>
                         </div>
                         <div class="kpi-value">73</div>
                         <div class="kpi-change neutral">Vacant beds</div>
@@ -3326,7 +3394,7 @@
                 <div class="card-header">
                     <div class="card-title">Facility Booking</div>
                     <div class="card-actions">
-                        <button class="btn btn-secondary btn-sm">View Calendar</button>
+                        <button class="btn btn-secondary btn-sm" onclick="showNotification('Opening calendar view...', 'info')">View Calendar</button>
                         <button class="btn btn-primary btn-sm" onclick="newBooking()">New Booking</button>
                     </div>
                 </div>
@@ -3347,7 +3415,7 @@
                     <div class="kpi-card">
                         <div class="kpi-header">
                             <span class="kpi-label">Today's Bookings</span>
-                            <div class="kpi-icon blue">📅</div>
+                            <div class="kpi-icon blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
                         </div>
                         <div class="kpi-value">24</div>
                         <div class="kpi-change positive">Across all facilities</div>
@@ -3356,7 +3424,7 @@
                     <div class="kpi-card">
                         <div class="kpi-header">
                             <span class="kpi-label">Auditorium</span>
-                            <div class="kpi-icon green">🎭</div>
+                            <div class="kpi-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></div>
                         </div>
                         <div class="kpi-value">85%</div>
                         <div class="kpi-change positive">Utilization</div>
@@ -3365,7 +3433,7 @@
                     <div class="kpi-card">
                         <div class="kpi-header">
                             <span class="kpi-label">Sports Complex</span>
-                            <div class="kpi-icon orange">🏋️</div>
+                            <div class="kpi-icon orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11M2 12h4m16 0h-4M12 2v4m0 16v-4"/></svg></div>
                         </div>
                         <div class="kpi-value">72%</div>
                         <div class="kpi-change positive">Utilization</div>
@@ -3374,7 +3442,7 @@
                     <div class="kpi-card">
                         <div class="kpi-header">
                             <span class="kpi-label">Pending Approvals</span>
-                            <div class="kpi-icon red">⏳</div>
+                            <div class="kpi-icon red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2H6v5l6 5-6 5v5h12v-5l-6-5 6-5V2z"/></svg></div>
                         </div>
                         <div class="kpi-value">8</div>
                         <div class="kpi-change neutral">Awaiting approval</div>
@@ -3392,7 +3460,7 @@
                     <div class="card-title">Fee Structure Management</div>
                     <div
                     <div class="card-actions">
-                        <button class="btn btn-secondary btn-sm">Export</button>
+                        <button class="btn btn-secondary btn-sm" onclick="exportData('Fee Structure')">Export</button>
                         <button class="btn btn-primary btn-sm" onclick="addFeeStructure()">Add Fee Structure</button>
                     </div>
                 </div>
@@ -3481,7 +3549,7 @@
                 <div class="card-header">
                     <div class="card-title">Student Fee Ledger</div>
                     <div class="card-actions">
-                        <button class="btn btn-secondary btn-sm">Export Report</button>
+                        <button class="btn btn-secondary btn-sm" onclick="exportData('Fee Ledger Report')">Export Report</button>
                         <button class="btn btn-primary btn-sm">Record Payment</button>
                     </div>
                 </div>
@@ -3506,7 +3574,7 @@
                 <div class="kpi-card">
                     <div class="kpi-header">
                         <span class="kpi-label">Total Collectible</span>
-                        <div class="kpi-icon blue">💰</div>
+                        <div class="kpi-icon blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
                     </div>
                     <div class="kpi-value">₹ 3.6 Cr</div>
                     <div class="kpi-change neutral">Current academic year</div>
@@ -3515,7 +3583,7 @@
                 <div class="kpi-card">
                     <div class="kpi-header">
                         <span class="kpi-label">Collected</span>
-                        <div class="kpi-icon green">✓</div>
+                        <div class="kpi-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></div>
                     </div>
                     <div class="kpi-value">₹ 3.2 Cr</div>
                     <div class="kpi-change positive">89.5% collection</div>
@@ -3524,7 +3592,7 @@
                 <div class="kpi-card">
                     <div class="kpi-header">
                         <span class="kpi-label">Pending</span>
-                        <div class="kpi-icon orange">⏳</div>
+                        <div class="kpi-icon orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2H6v5l6 5-6 5v5h12v-5l-6-5 6-5V2z"/></svg></div>
                     </div>
                     <div class="kpi-value">₹ 38 L</div>
                     <div class="kpi-change neutral">268 students</div>
@@ -3533,7 +3601,7 @@
                 <div class="kpi-card">
                     <div class="kpi-header">
                         <span class="kpi-label">Overdue</span>
-                        <div class="kpi-icon red">⚠️</div>
+                        <div class="kpi-icon red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
                     </div>
                     <div class="kpi-value">₹ 4.2 L</div>
                     <div class="kpi-change negative">42 students</div>
@@ -3618,7 +3686,7 @@
                 <div class="card-header">
                     <div class="card-title">Payments & Waivers</div>
                     <div class="card-actions">
-                        <button class="btn btn-secondary btn-sm">Export</button>
+                        <button class="btn btn-secondary btn-sm" onclick="exportData('Payment Records')">Export</button>
                         <button class="btn btn-primary btn-sm">Record Payment</button>
                     </div>
                 </div>
@@ -3719,8 +3787,8 @@
                 <div class="card-header">
                     <div class="card-title">Communications & Notices</div>
                     <div class="card-actions">
-                        <button class="btn btn-secondary btn-sm">View History</button>
-                        <button class="btn btn-primary btn-sm">Create Notice</button>
+                        <button class="btn btn-secondary btn-sm" onclick="showNotification('Loading notice history...', 'info')">View History</button>
+                        <button class="btn btn-primary btn-sm" onclick="showNotification('Notice creation form opening...', 'info')">Create Notice</button>
                     </div>
                 </div>
                 
@@ -3818,7 +3886,7 @@
                 <div class="card-header">
                     <div class="card-title">System Audit Logs</div>
                     <div class="card-actions">
-                        <button class="btn btn-secondary btn-sm">Export Logs</button>
+                        <button class="btn btn-secondary btn-sm" onclick="exportData('Audit Logs')">Export Logs</button>
                     </div>
                 </div>
                 
@@ -3930,7 +3998,7 @@
                     <div class="kpi-card">
                         <div class="kpi-header">
                             <span class="kpi-label">System Uptime</span>
-                            <div class="kpi-icon green">✓</div>
+                            <div class="kpi-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></div>
                         </div>
                         <div class="kpi-value">99.8%</div>
                         <div class="kpi-change positive">45 days, 12 hours</div>
@@ -3939,7 +4007,7 @@
                     <div class="kpi-card">
                         <div class="kpi-header">
                             <span class="kpi-label">CPU Usage</span>
-                            <div class="kpi-icon blue">💻</div>
+                            <div class="kpi-icon blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
                         </div>
                         <div class="kpi-value">42%</div>
                         <div class="kpi-change positive">Normal load</div>
@@ -3948,7 +4016,7 @@
                     <div class="kpi-card">
                         <div class="kpi-header">
                             <span class="kpi-label">Memory Usage</span>
-                            <div class="kpi-icon orange">🧠</div>
+                            <div class="kpi-icon orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3M12 17h.01"/></svg></div>
                         </div>
                         <div class="kpi-value">68%</div>
                         <div class="kpi-change neutral">12.8 GB / 19 GB</div>
@@ -3957,7 +4025,7 @@
                     <div class="kpi-card">
                         <div class="kpi-header">
                             <span class="kpi-label">Disk Space</span>
-                            <div class="kpi-icon green">💾</div>
+                            <div class="kpi-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg></div>
                         </div>
                         <div class="kpi-value">54%</div>
                         <div class="kpi-change positive">542 GB / 1 TB</div>
@@ -3966,7 +4034,7 @@
                     <div class="kpi-card">
                         <div class="kpi-header">
                             <span class="kpi-label">Database</span>
-                            <div class="kpi-icon green">🗄️</div>
+                            <div class="kpi-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><path d="M9 9h6M9 15h6"/></svg></div>
                         </div>
                         <div class="kpi-value">Healthy</div>
                         <div class="kpi-change positive">All connections stable</div>
@@ -3975,7 +4043,7 @@
                     <div class="kpi-card">
                         <div class="kpi-header">
                             <span class="kpi-label">API Response</span>
-                            <div class="kpi-icon blue">⚡</div>
+                            <div class="kpi-icon blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
                         </div>
                         <div class="kpi-value">142 ms</div>
                         <div class="kpi-change positive">Avg response time</div>
@@ -3984,7 +4052,7 @@
                     <div class="kpi-card">
                         <div class="kpi-header">
                             <span class="kpi-label">Active Users</span>
-                            <div class="kpi-icon purple">👥</div>
+                            <div class="kpi-icon purple"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
                         </div>
                         <div class="kpi-value">284</div>
                         <div class="kpi-change positive">Currently online</div>
@@ -3993,7 +4061,7 @@
                     <div class="kpi-card">
                         <div class="kpi-header">
                             <span class="kpi-label">Last Backup</span>
-                            <div class="kpi-icon green">💾</div>
+                            <div class="kpi-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg></div>
                         </div>
                         <div class="kpi-value">2 hrs ago</div>
                         <div class="kpi-change positive">Successful</div>
@@ -4204,7 +4272,7 @@
                     <div class="kpi-card">
                         <div class="kpi-header">
                             <span class="kpi-label">Overall CGPA</span>
-                            <div class="kpi-icon blue">📊</div>
+                            <div class="kpi-icon blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
                         </div>
                         <div class="kpi-value">${student.cgpa}</div>
                         <div class="kpi-change positive">Out of 10.0</div>
@@ -4212,7 +4280,7 @@
                     <div class="kpi-card">
                         <div class="kpi-header">
                             <span class="kpi-label">Attendance</span>
-                            <div class="kpi-icon green">✓</div>
+                            <div class="kpi-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></div>
                         </div>
                         <div class="kpi-value">${student.attendance}</div>
                         <div class="kpi-change positive">Above requirement</div>
@@ -4220,7 +4288,7 @@
                     <div class="kpi-card">
                         <div class="kpi-header">
                             <span class="kpi-label">Completed Credits</span>
-                            <div class="kpi-icon purple">🎓</div>
+                            <div class="kpi-icon purple"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3L1 9l11 6 11-6-11-6z"/><path d="M5 13l7 4 7-4M5 13v6l7 4 7-4v-6"/></svg></div>
                         </div>
                         <div class="kpi-value">78</div>
                         <div class="kpi-change neutral">Out of 120</div>
@@ -4228,7 +4296,7 @@
                     <div class="kpi-card">
                         <div class="kpi-header">
                             <span class="kpi-label">Active Courses</span>
-                            <div class="kpi-icon orange">📚</div>
+                            <div class="kpi-icon orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
                         </div>
                         <div class="kpi-value">${student.courses.length}</div>
                         <div class="kpi-change neutral">This semester</div>
@@ -4400,7 +4468,7 @@
                         <div class="kpi-card">
                             <div class="kpi-header">
                                 <span class="kpi-label">Avg. Attendance</span>
-                                <div class="kpi-icon green">✓</div>
+                                <div class="kpi-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></div>
                             </div>
                             <div class="kpi-value">88%</div>
                             <div class="kpi-change positive">Above target</div>
@@ -4408,7 +4476,7 @@
                         <div class="kpi-card">
                             <div class="kpi-header">
                                 <span class="kpi-label">Pass Rate</span>
-                                <div class="kpi-icon blue">📊</div>
+                                <div class="kpi-icon blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
                             </div>
                             <div class="kpi-value">92%</div>
                             <div class="kpi-change positive">Last semester</div>
@@ -4658,7 +4726,7 @@
                     <div class="card-title">Department of Computer Science</div>
                     <div class="card-actions">
                         <button class="btn btn-secondary btn-sm" onclick="editDepartment('${deptId}')">Edit Department</button>
-                        <button class="btn btn-primary btn-sm">View Faculty</button>
+                        <button class="btn btn-primary btn-sm" onclick="navigateToScreen('users')">View Faculty</button>
                     </div>
                 </div>
                 
@@ -4696,7 +4764,7 @@
                     <div class="kpi-card">
                         <div class="kpi-header">
                             <span class="kpi-label">Active Courses</span>
-                            <div class="kpi-icon blue">📚</div>
+                            <div class="kpi-icon blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
                         </div>
                         <div class="kpi-value">42</div>
                         <div class="kpi-change positive">This semester</div>
@@ -4704,7 +4772,7 @@
                     <div class="kpi-card">
                         <div class="kpi-header">
                             <span class="kpi-label">Avg. Class Size</span>
-                            <div class="kpi-icon green">👥</div>
+                            <div class="kpi-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
                         </div>
                         <div class="kpi-value">28</div>
                         <div class="kpi-change neutral">Students</div>
@@ -4712,7 +4780,7 @@
                     <div class="kpi-card">
                         <div class="kpi-header">
                             <span class="kpi-label">Pass Rate</span>
-                            <div class="kpi-icon purple">📊</div>
+                            <div class="kpi-icon purple"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
                         </div>
                         <div class="kpi-value">94%</div>
                         <div class="kpi-change positive">Last semester</div>
@@ -4720,7 +4788,7 @@
                     <div class="kpi-card">
                         <div class="kpi-header">
                             <span class="kpi-label">Research Papers</span>
-                            <div class="kpi-icon orange">📄</div>
+                            <div class="kpi-icon orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
                         </div>
                         <div class="kpi-value">38</div>
                         <div class="kpi-change positive">This year</div>
@@ -4744,7 +4812,7 @@
                     <div class="card-title">Dell Latitude 5420 Laptop</div>
                     <div class="card-actions">
                         <button class="btn btn-secondary btn-sm" onclick="editAsset('${assetId}')">Edit Asset</button>
-                        <button class="btn btn-primary btn-sm">Transfer Asset</button>
+                        <button class="btn btn-primary btn-sm" onclick="showNotification('Asset transfer initiated', 'success')">Transfer Asset</button>
                     </div>
                 </div>
                 
@@ -4805,8 +4873,8 @@
                 <div class="card-header">
                     <div class="card-title">AC Not Working - Room 301</div>
                     <div class="card-actions">
-                        <button class="btn btn-secondary btn-sm">Assign Technician</button>
-                        <button class="btn btn-primary btn-sm">Mark Resolved</button>
+                        <button class="btn btn-secondary btn-sm" onclick="showNotification('Technician assigned successfully', 'success')">Assign Technician</button>
+                        <button class="btn btn-primary btn-sm" onclick="showNotification('Ticket marked as resolved', 'success')">Mark Resolved</button>
                     </div>
                 </div>
                 
