@@ -4391,6 +4391,12 @@
         const role = document.getElementById('loginRole').value;
         const userId = document.getElementById('userId').value;
         
+        // Handle student users - redirect to student portal
+        if (role === 'student') {
+            window.location.href = 'student.html';
+            return;
+        }
+        
         // Handle faculty users
         if (role === 'faculty') {
             currentUser = {
