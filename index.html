@@ -13561,16 +13561,20 @@
         if(confirm('Are you sure you want to logout?')) {
             document.getElementById('facultyPortal').style.display = 'none';
             document.getElementById('mainApp').style.display = 'none';
-            document.getElementById('loginScreen').classList.remove('hidden');
+            document.getElementById('loginScreen').classList.add('hidden');
+            document.getElementById('roleSelectionScreen').classList.remove('hidden');
             currentUser = null;
+            selectedRole = '';
         }
     }
 
     function handleAdminLogout() {
         if(confirm('Are you sure you want to logout?')) {
             document.getElementById('mainApp').classList.add('hidden');
-            document.getElementById('loginScreen').classList.remove('hidden');
+            document.getElementById('loginScreen').classList.add('hidden');
+            document.getElementById('roleSelectionScreen').classList.remove('hidden');
             currentUser = null;
+            selectedRole = '';
         }
     }
 
